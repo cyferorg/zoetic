@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3 style="text-align: center; font-size:40px;"><strong>Crop</strong></h3>
+<p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging all those images to a single image. Due to the alignment operation, it is very unlikely that all the images boarders will be aligned. In fact the images will probably resemble a very untidy stack of cards. This means that the user specified crop is likely to fall outside of some of the image's boarders. (The wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
+<p>Two examples of an average image with a user specified crop, produced from a project of four images.</p>
+<img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="crop1.jpg" alt="Crop1" width="538" height="805">
+<img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="crop2.jpg" alt="Crop2" width="538" height="805">
+<p>In the first example, the crop is so large that none of the four images fully covers it. (Note the '4' at the top of the image.) In the second example, the crop has been resized sufficiently so that it is covered by all the images. For the latter case, no background will be exposed in the resulting video. For the former, the user will need to decide on how to handle the exposed background.</p>
+<ul>
+<li>The exposed background may be so small that it is deemed to be not too distracting and hence can be ignored.</li>
+<li>Redo the crop so that it is completely covered by all the images. (As with the above second example.) This will produce a video with no artefacts however, sometimes, to obtain full coverage the new crop may be deemed to be too small or in the wrong location.</li>
+<li>Choose a colour of the background which minimises the distraction e.g. for a project showing a natural landscape, a shade of green may work.</li>
+<li>Zoetic uses an image from earlier in the sequence to cover the background. If the scenes are similar, this approach may work quite well, but if they are dissimilar, weird artefacts may appear.</li>
+<li>Zoetic uses a 'zoomed' version of the image being processed to cover the background. (This is often the approach used by tv news programs where a viewer has submitted a video with a portrait aspect.)</li>
+<li>Zoetic ‘bleed’ the edges of the image being processed to cover the background. Provided the exposed area is not too large, this approach usually works quite well.</li>
+</ul>
+<p>The last four options are all available in Zoetic's Settings.</p>
+</body>
+<html>
