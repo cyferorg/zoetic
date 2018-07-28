@@ -63,20 +63,17 @@ $("#navbar").load("../nav.html");
 }); 
 </script>
 <div id="main">
-
-
-<h2 style="text-align: center; font-size:40px;">Zoetic
-<a href="../index_ko.html"><img src="../imgs/skorea.jpg" width="32" height="32" align="right">
-<a href="../index.html"><img src="../imgs/uk.jpg" width="32" height="32" align="right">
-<a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"></a><img src="../imgs/zoetic.png" width="64" height="64" align="left">
-</h2>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
-<hr>
+<table style="width:100%;background-color: green;  background-position: center;">
+<tr>
+<th><p style="float: left; width: 33.3%; text-align: left;cursor:pointer" onclick="openNav()">&#9776; Contents</a></p></th>
+<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64"></a></th>
+<th><a href="../index_ko.html"><img src="../imgs/skorea.png" width="32" height="32" align="right"></a>
+<a href="../index.html"><img src="../imgs/uk.png" width="32" height="32" align="right"></a></th>
+</tr>
+</table>
 
 <h2>Crop</h2>
-<pre>
 
-</pre>
 <p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging all those images to a single image. Due to the alignment operation, it is very unlikely that all the image boarders will be aligned. In fact the images will probably resemble a very untidy stack of cards. In such cases the user specified crop will partially lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
 <p>Two examples showing an average image with a user specified crop, produced from a project of four images. The blue rectangle is the crop. The white rectangles are the image boarders.</p>
 <img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="../imgs/crop1.jpg" alt="Crop1" width="40%">
