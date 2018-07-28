@@ -54,26 +54,33 @@ body {
 </style>
 </head>
 <body>
-
+<!--
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="../index2.html">Introduction</a>
-  <a href="#howtouse">How to use Zoetic</a>
-  <a href="#furtherdiscussion">Further discussion</a>
+  <a href="../index2.html#howtouse">How to use Zoetic</a>
+  <a href="../index2.html#furtherdiscussion">Further discussion</a>
   <a href="#">Advanced</a>
 	<ul>
-	<li><a href="crop/crop.html">Crop</a></li>
-	<li><a href="subprojects/subprojects.html">Sub-projects</a></li>
-	<li><a href="layers/layers.html">Fun with layers</a></li>
+	<li><a href="../crop/crop.html">Crop</a></li>
+	<li><a href="../subprojects/subprojects.html">Sub-projects</a></li>
+	<li><a href="../layers/layers.html">Fun with layers</a></li>
 	</ul>
-<a href="#feedback">Feedback</a>
-<a href="#privacy">Privacy Statement</a>
+<a href="../index2.html#feedback">Feedback</a>
+<a href="../index2.html#privacy">Privacy Statement</a>
 </div>
-
+-->
+<div id="navbar">
+</div>
+<script>
+$(function() {
+$("#navbar").load("../nav.html"); 
+}); 
+</script>
 <div id="main">
 
 
-<h2 style="text-align: center; font-size:40px;">Zoetic
+<h2 style="text-align: center; font-size:40px;">Zoetic2
 <a href="../index_ko.html"><img src="../imgs/skorea.jpg" width="32" height="32" align="right">
 <a href="../index.html"><img src="../imgs/uk.jpg" width="32" height="32" align="right">
 <a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"></a><img src="../imgs/zoetic.png" width="64" height="64" align="left">
@@ -107,14 +114,16 @@ body {
 
 </pre>
 <p><A href="../index.html">Contents</A></p>
-</body>
 <script>
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
+	document.getElementById("main").style.marginLeft = "250px";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-<html>
+</body>
+</html>
