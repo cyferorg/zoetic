@@ -1,8 +1,92 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
 <body>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index2.html">Introduction</a>
+  <a href="#howtouse">How to use Zoetic</a>
+  <a href="#furtherdiscussion">Further discussion</a>
+  <a href="#">Advanced</a>
+	<ul>
+	<li><a href="crop/crop.html">Crop</a></li>
+	<li><a href="subprojects/subprojects.html">Sub-projects</a></li>
+	<li><a href="layers/layers.html">Fun with layers</a></li>
+	</ul>
+<a href="#feedback">Feedback</a>
+<a href="#privacy">Privacy Statement</a>
+</div>
+
+<div id="main">
+
+
+<h2 style="text-align: center; font-size:40px;">Zoetic
+<a href="../index_ko.html"><img src="../imgs/skorea.jpg" width="32" height="32" align="right">
+<a href="../index.html"><img src="../imgs/uk.jpg" width="32" height="32" align="right">
+<a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"></a><img src="../imgs/zoetic.png" width="64" height="64" align="left">
+</h2>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
+<pre>
+
+</pre>
+
 <h2>Crop</h2>
+<pre>
+
+</pre>
 <p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging all those images to a single image. Due to the alignment operation, it is very unlikely that all the image boarders will be aligned. In fact the images will probably resemble a very untidy stack of cards. In such cases the user specified crop will partially lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
 <p>Two examples showing an average image with a user specified crop, produced from a project of four images. The blue rectangle is the crop. The white rectangles are the image boarders.</p>
 <img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="../imgs/crop1.jpg" alt="Crop1" width="40%">
@@ -24,4 +108,13 @@
 </pre>
 <p><A href="../index.html">Contents</A></p>
 </body>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 <html>
