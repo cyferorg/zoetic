@@ -1,32 +1,90 @@
+<!DOCTYPE html>
+<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
 </head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#introduction">Introduction</a>
+  <ul>
+	<li><a href="#examples">Video examples</a></li>
+	<li><a href="#onlypro">Professional version</a></li>
+  </ul>
+  <a href="#howtouse">How to use Zoetic</a>
+  <ul>
+  <a href="firstproject/firstproject.html">Your first project</a>
+  </ul>
+  <a href="furtherdiscussion/furtherdiscussion.html">Further discussion</a>
+  <a href="#">Advanced</a>
+	<ul>
+	<li><a href="crop/crop.html">Crop</a></li>
+	<li><a href="subprojects/subprojects.html">Sub-projects</a></li>
+	<li><a href="layers/layers.html">Fun with layers</a></li>
+	</ul>
+<a href="feedbackprivacy/feedbackprivacy.html#feedback">Feedback</a>
+<a href="feedbackprivacy/feedbackprivacy.html#privacy">Privacy Statement</a>
+</div>
+
+<div id="main">
 <h2 style="text-align: center; font-size:40px;">Zoetic
 <a href="./index_ko.html"><img src="imgs/skorea.jpg" width="32" height="32" align="right">
 <a href="./index.html"><img src="imgs/uk.jpg" width="32" height="32" align="right">
 <a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"></a><img src="imgs/zoetic.png" width="64" height="64" align="left">
 </h2>
-<h3>Contents</h3>
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<ul>
-<li><a href="#examples">Examples and video instructions</a></li>
-<li><a href="#onlypro">Functionality only available with the Professional version</a></li>
-</ul>
-<li><a href="#howtouse">How to use Zoetic</a></li>
-<li><a href="#furtherdiscussion">Further discussion</a></li>
-<li>Advanced</li>
-<ul>
-<li><a href="crop/crop.html">Crop</a></li>
-<li><a href="subprojects/subprojects.html">Sub-projects</a></li>
-<li><a href="layers/layers.html">Fun with layers</a></li>
-</ul>
-<li><a href="#feedback">Feedback</a></li>
-<li><a href="#privacy">Privacy Statement&nbsp;</a></li>
-</ul>
-<pre>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
+<hr>
 
-</pre>
 <a id="introduction">
 <h3>Introduction</h3>
 <p>How has your appearance changed over the years? What about your children&rsquo;s? Your parents&rsquo;? Your garden&rsquo;s? What about the last few, very noisy, months of the construction site at the bottom of the road; going from ground breaking to an upmarket apartment block? If you want to visualise such changes, grab the photos and let Zoetic show you.</p>
@@ -103,32 +161,20 @@
 <li>Create the video. This can take a while; how long will depend upon the resolution of the images, the required number of intermediate steps and the processing power of the device being used. During video creation, the device can be used for other functions since the creation will continue in the background.</li>
 <li>Play the video. By default, the video is saved in the Movies folder and hence can be viewed from any app that handles viewing videos, including from within Zoetic.</li>
 </ol>
-<p><A href="firstproject/firstproject.html">Steps to creating your first project</A></p>
-<p>&nbsp;</p>
-<a id="furtherdiscussion">
-<h3>Further Discussion</h3>
-<ul>
-<li>The most important step in creating a good result is deciding on the two alignment points. The first point is the actual alignment location and is the area that will be most &ldquo;in focus&rdquo; in the resulting video. The second point is used to calculate the scaling, translation and rotation factors, relative to the first point, required to align the images. This means the actual composition of the second point is not important (it could be the corner of an inconsequential doorpost) but it must be accurately locatable in all images.</li>
-<li>The series is aligned to the first image (i.e. the target) in the series. (The Pro version allows any image to be selected as the target image.) Therefore, the first image should be a good example of the series and at the orientation and scale required of the video to be generated.</li>
-<li>It is not necessary to mark all the images before a video is created though only the marked images will be used.</li>
-<li>Additional images can be added to a project at any time.</li>
-<li>As well as using external apps to import images into Zoetic (as per step 1), images can be imported directly into a project using Zoetic&rsquo;s <em>Add images</em> However, you are likely to find greater flexibility using external apps. It is therefore advisable to share from images apps to Zoetic, rather than Zoetic &ldquo;pulling&rdquo; images from external apps.</li>
-<li>Images are sorted, by default, in chronological order from oldest to newest. If an undated image is added to the project it will be added to the start (or end) of the series. The image will then need to be manually moved to its correct location. The series is only automatically sorted once, which is when the images are first added to the project. Any manual re-ordering after that point will be maintained. Alternatively, use the Sort function to add dates to any undated images.</li>
-</ul>
-<li>(Pro only) In the Sort function images may be temporarily selected or deselected for processing. Also, the project&rsquo;s target image may be selected.</li>
-</ul>
-<pre>
 
-</pre>
-<a id="feedback">
-<h4>Feedback / Bug Reports</h4>
-<p>Please send email to <a href="mailto:cyferltd@gmail.com?subject=Zoetic">cyferltd@gmail.com</a> rather than through the Play Store&rsquo;s review section.</p>
-<pre>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+	document.getElementById("main").style.marginLeft = "250px";
+}
 
-</pre>
-<p>&nbsp;</p>
-<a id="privacy">
-<h3>Privacy Statement</h3>
-<p>No personal information is processed or collected. In fact, no information whatsoever leaves your device unless you upload the resulting video and/or images to a third party, such as Google Photos. All processing of the images is undertaken on your device.</p>
-<p>If you send logs to Zoetic&rsquo;s author (to help with fault finding) then a small amount of information about your device (model, Android version etc) is included in the logs, in addition to the process flow that Zoetic took up to the point you submit the logs. Zoetic&rsquo;s settings file and current project&rsquo;s settings file are also included in the submission. Paths and project names are likely to be included in the files so you should ensure that when submitting a log you do not use project names or paths that contain personal, or any other form of sensitive, information. Feel free to check what is being submitted by, for example, emailing the logs to yourself before email them to Zoetic's author.</p>
-<p>The face/eye detection function uses a capability provided by Google. It runs locally on the device (i.e. images are not uploaded to Google for processing) but if there is still a concern that images might be processed by Google, Zoetic&rsquo;s settings page allows for the function to be hidden and hence unusable.</p>
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+	document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<p style="float: left; width: 33.3%; text-align: left; background-color:lightblue"><A href="javascript:window.history.back();">Back</a></p>
+<p style="float: left; width: 33.3%; text-align: center; background-color:lightblue"><A href="javascript:openNav();">Contents</a></p>
+<p style="float: left; width: 33.3%; text-align: right; background-color:lightblue"><a href="firstproject/firstproject.html">Your first project</a></p>
+</body>
+</html>

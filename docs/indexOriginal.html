@@ -1,83 +1,29 @@
-<!DOCTYPE html>
-<html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
 </head>
-<body>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#introduction">Introduction</a>
-  <a href="#howtouse">How to use Zoetic</a>
-  <a href="#furtherdiscussion">Further discussion</a>
-  <a href="#">Advanced</a>
-	<ul>
-	<li><a href="crop/crop.html">Crop</a></li>
-	<li><a href="subprojects/subprojects.html">Sub-projects</a></li>
-	<li><a href="layers/layers.html">Fun with layers</a></li>
-	</ul>
-<a href="feedbackprivacy/feedbackprivacy.html#feedback">Feedback</a>
-<a href="feedbackprivacy/feedbackprivacy.html#privacy">Privacy Statement</a>
-</div>
-
-<div id="main">
-
-
 <h2 style="text-align: center; font-size:40px;">Zoetic
 <a href="./index_ko.html"><img src="imgs/skorea.jpg" width="32" height="32" align="right">
 <a href="./index.html"><img src="imgs/uk.jpg" width="32" height="32" align="right">
 <a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"></a><img src="imgs/zoetic.png" width="64" height="64" align="left">
 </h2>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Contents</span>
+<h3>Contents</h3>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<ul>
+<li><a href="#examples">Examples and video instructions</a></li>
+<li><a href="#onlypro">Functionality only available with the Professional version</a></li>
+</ul>
+<li><a href="#howtouse">How to use Zoetic</a></li>
+<li><a href="#furtherdiscussion">Further discussion</a></li>
+<li>Advanced</li>
+<ul>
+<li><a href="crop/crop.html">Crop</a></li>
+<li><a href="subprojects/subprojects.html">Sub-projects</a></li>
+<li><a href="layers/layers.html">Fun with layers</a></li>
+</ul>
+<li><a href="#feedback">Feedback</a></li>
+<li><a href="#privacy">Privacy Statement&nbsp;</a></li>
+</ul>
 <pre>
 
 </pre>
@@ -159,8 +105,6 @@ body {
 </ol>
 <p><A href="firstproject/firstproject.html">Steps to creating your first project</A></p>
 <p>&nbsp;</p>
-
-
 <a id="furtherdiscussion">
 <h3>Further Discussion</h3>
 <ul>
@@ -176,16 +120,15 @@ body {
 <pre>
 
 </pre>
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-	document.getElementById("main").style.marginLeft = "250px";
-}
+<a id="feedback">
+<h4>Feedback / Bug Reports</h4>
+<p>Please send email to <a href="mailto:cyferltd@gmail.com?subject=Zoetic">cyferltd@gmail.com</a> rather than through the Play Store&rsquo;s review section.</p>
+<pre>
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-	document.getElementById("main").style.marginLeft= "0";
-}
-</script>
-</body>
-</html>
+</pre>
+<p>&nbsp;</p>
+<a id="privacy">
+<h3>Privacy Statement</h3>
+<p>No personal information is processed or collected. In fact, no information whatsoever leaves your device unless you upload the resulting video and/or images to a third party, such as Google Photos. All processing of the images is undertaken on your device.</p>
+<p>If you send logs to Zoetic&rsquo;s author (to help with fault finding) then a small amount of information about your device (model, Android version etc) is included in the logs, in addition to the process flow that Zoetic took up to the point you submit the logs. Zoetic&rsquo;s settings file and current project&rsquo;s settings file are also included in the submission. Paths and project names are likely to be included in the files so you should ensure that when submitting a log you do not use project names or paths that contain personal, or any other form of sensitive, information. Feel free to check what is being submitted by, for example, emailing the logs to yourself before email them to Zoetic's author.</p>
+<p>The face/eye detection function uses a capability provided by Google. It runs locally on the device (i.e. images are not uploaded to Google for processing) but if there is still a concern that images might be processed by Google, Zoetic&rsquo;s settings page allows for the function to be hidden and hence unusable.</p>
