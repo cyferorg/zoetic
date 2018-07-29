@@ -1,3 +1,4 @@
+document.write('\
 <div id="mySidenav" class="sidenav">\
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
   <a href="../index.html">Introduction</a>\
@@ -14,7 +15,7 @@
 	<ul>\
 	<li><a href="../crop/crop.html">Crop</a></li>\
 	<li><a href="../subprojects/subprojects.html">Sub-projects</a></li>\
-	<li><a href="../layers/layers.html">Fun with layers</a></li>\
+	<li><a href="../layers/layers.html" onclick="closeNav()">Fun with layers</a></li>\
 	</ul>\
 <a href="../feedbackprivacy/feedbackprivacy.html">Feedback</a>\
 <a href="../feedbackprivacy/feedbackprivacy.html#privacy">Privacy Statement</a>\
@@ -22,11 +23,10 @@
 <script>\
 function openNav() {\
     document.getElementById("mySidenav").style.width = "250px";\
-	document.getElementById("main").style.marginLeft = "250px";\
 }\
 \
 function closeNav() {\
     document.getElementById("mySidenav").style.width = "0";\
-	document.getElementById("main").style.marginLeft= "0";\
 }\
-</script>
+</script>\
+');

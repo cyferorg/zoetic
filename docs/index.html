@@ -3,69 +3,12 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="zoetic.css">
-<!--
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-#head {
-  width: 100%;
-  background-color: green;
-  background-position: center;
-}
-</style>
--->
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav" onclick="closeNav()>
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html#introduction">Introduction</a>
+  <a href="index.html#introduction" >Introduction</a>
   <ul>
 	<li><a href="index.html#examples">Video examples</a></li>
 	<li><a href="index.html#onlypro">Professional version</a></li>
@@ -88,14 +31,14 @@ body {
 <div id="head">
 <table style="width:100%">
 <tr>
-<th><p style="float: left; width: 33.3%; text-align: left;cursor:pointer" onclick="openNav()">&#9776; Contents</a></p></th>
+<th><p style="float:left; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</a></p></th>
 <th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="imgs/zoetic2.png" width="128" height="64"></a></th>
 <th><a href="./index_ko.html"><img src="imgs/skorea.png" width="32" height="32" align="right"></a>
 <a href="./index.html"><img src="imgs/uk.png" width="32" height="32" align="right"></a></th>
 </tr>
 </table>
-
 </div>
+<div onClick="closeNav()">
 <a id="introduction">
 <h3>Introduction</h3>
 <p>How has your appearance changed over the years? What about your children&rsquo;s? Your parents&rsquo;? Your garden&rsquo;s? What about the last few, very noisy, months of the construction site at the bottom of the road; going from ground breaking to an upmarket apartment block? If you want to visualise such changes, grab the photos and let Zoetic show you.</p>
@@ -184,12 +127,7 @@ function closeNav() {
 	document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-<!--
-<footer  style="width:100%;background-color: green;">
-<p style="float: left; width: 33.3%; text-align: left; "><A href="javascript:window.history.back();">Back</a></p>
-<p style="float: left; width: 33.3%; text-align: center; background-color:lightblue"><A href="javascript:openNav();">Contents</a></p>
-<p style="float: left; width: 33.3%; text-align: right; background-color:lightblue"><a href="firstproject/firstproject.html">Your first project</a></p>
-</footer> -->
+
 <table style="width:100%;background-color: lightgrey;  background-position: center;">
 <tr>
 <th><A href="javascript:window.history.back();">Back</a></th>
@@ -197,5 +135,6 @@ function closeNav() {
 <th><a href="firstproject/firstproject.html">Your first project</a></th>
 </tr>
 </table>
+</div>
 </body>
 </html>

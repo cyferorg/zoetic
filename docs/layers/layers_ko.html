@@ -1,74 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-</style>
+<link rel="stylesheet" type="text/css" href="../zoetic.css">
 </head>
 <body>
-<div id="navbar">
-</div>
-<script>
-$(function() {
-$("#navbar").load("../nav_ko.html"); 
-}); 
-</script>
-
-<table style="width:100%;background-color: green;  background-position: center;">
+<script src="../nav_ko.js"></script>
+<div id="head">
+<table style="width:100%;">
 <tr>
-<th><p style="float: left; width: 33.3%; text-align: left;cursor:pointer" onclick="openNav()">&#9776; Contents</a></p></th>
+<th><p style="float:left; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</a></p></th>
 <th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64"></a></th>
 <th><font color="green">hidden text</font></th>
 </tr>
-</table><h2>Playing with Layers</h2>
+</table>
+</div>
+<div onClick="closeNav()">
+<h2>Playing with Layers</h2>
 <p>(Pro version only)</p>
 <pre>
 
@@ -118,5 +66,6 @@ $("#navbar").load("../nav_ko.html");
 <th><a href="../feedbackprivacy/feedbackprivacy_ko.html#feedback">Feedback</a></th>
 </tr>
 </table>
+</div>
 </body>
 </html>

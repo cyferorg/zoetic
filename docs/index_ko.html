@@ -2,61 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-#head {
-  width: 100%;
-  background-color: green;
-  background-position: center;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="zoetic.css">
 </head>
 <body>
 
@@ -82,19 +28,19 @@ body {
 <a href="feedbackprivacy/feedbackprivacy_ko.html#privacy">개인정보 보호설명</a>
 </div>
 
-<div id="main">
 <div id="head">
 <table style="width:100%">
 <tr>
-<th><p style="float: left; width: 33.3%; text-align: left;cursor:pointer" onclick="openNav()">&#9776; Contents</a></p></th>
+<th><p style="float:left; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</a></p></th>
 <th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="imgs/zoetic2.png" width="128" height="64"></a></th>
 <th><a href="./index_ko.html"><img src="imgs/skorea.png" width="32" height="32" align="right"></a>
 <a href="./index.html"><img src="imgs/uk.png" width="32" height="32" align="right"></a></th>
 </tr>
 </table>
-
 </div>
-<a id="introduction"></a><h3>소개</h3>
+<div onClick="closeNav()">
+<a id="introduction"></a>
+<h3>소개</h3>
 <p>몇 년 동안 당신의 모습은 어떻게 변했을까요? 당신의 자녀들은 어떨까요? 부모님은요? 
 당신의 정원은요? 건물이나 아파트가 처음 지어지는 순간부터 완성된 건물을 보고 있는 지금 
 이순간,  지난 몇 달의 변화들이 궁금하지 않으신가요?  그 모습들이 지금까지 변해온 과정이 궁금하시다면 사진들을 모아 Zoetic 이 보여주도록 해보십시오.
@@ -190,10 +136,13 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 	document.getElementById("main").style.marginLeft= "0";
 }
-<pre>
-
-</pre>
 </script>
+<!--
+<footer  style="width:100%;background-color: green;">
+<p style="float: left; width: 33.3%; text-align: left; "><A href="javascript:window.history.back();">Back</a></p>
+<p style="float: left; width: 33.3%; text-align: center; background-color:lightblue"><A href="javascript:openNav();">Contents</a></p>
+<p style="float: left; width: 33.3%; text-align: right; background-color:lightblue"><a href="firstproject/firstproject.html">Your first project</a></p>
+</footer> -->
 <table style="width:100%;background-color: lightgrey;  background-position: center;">
 <tr>
 <th><A href="javascript:window.history.back();">Back</a></th>
@@ -201,3 +150,6 @@ function closeNav() {
 <th><a href="firstproject/firstproject_ko.html">Your first project</a></th>
 </tr>
 </table>
+</div>
+</body>
+</html>
