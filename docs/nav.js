@@ -1,5 +1,4 @@
-document.write('\
-\<div id="mySidenav" class="sidenav">\
+<div id="mySidenav" class="sidenav">\
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
   <a href="../index.html">Introduction</a>\
   <ul>\
@@ -30,4 +29,4 @@ function closeNav() {\
     document.getElementById("mySidenav").style.width = "0";\
 	document.getElementById("main").style.marginLeft= "0";\
 }\
-</script>\');
+</script>
