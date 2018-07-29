@@ -1,1 +1,2 @@
-document.write('<h1>Add your HTML code here</h1>');
+document.write('\
+<h1>Add your HTML code here</h1>');
