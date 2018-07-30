@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<title>Zoetic Crop page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="../zoetic.css">
 </head>
@@ -9,9 +10,9 @@
 <div id="head">
 <table style="width:100%;">
 <tr>
-<th><p style="float:left; width:33.3%; text-align:left;cursor:pointer;font-size:150%;" onclick="openNav()">&#9776;</a></p></th>
-<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64"></a></th>
-<th><font color="green">hidden text</font></th>
+<th><p style="float:left; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</p></th>
+<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>
+<th><p style="color:green">hidden text</p></th>
 </tr>
 </table>
 </div>
@@ -20,8 +21,8 @@
 
 <p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging the aligned images into a single image. Following the alignment, it is very unlikely that all the image boarders will be aligned. In fact the (virtual) stack of images will probably resemble a very untidy stack of cards. In such cases the user specified crop may partially lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
 <p>Two examples showing an average image, from a project of four images, with a user specified crop. The blue rectangle is the crop. The white rectangles are the image boarders of the four images.</p>
-<img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="../imgs/crop1.jpg" alt="Crop1" width="40%">
-<img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="../imgs/crop2.jpg" alt="Crop2" width="40%">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop1.jpg" alt="Crop1">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop2.jpg" alt="Crop2">
 <p>In the first example, the crop is so large that none of the four images fully covers it. (Note the '4' at the top of the screen.) In the second example, the crop has been resized sufficiently so that now it is covered by all the images. (Note the '0' at the top of the screen.) For the latter case, no background will be exposed in the resulting video. For the former, the user will need to decide on how to handle the exposed background:</p>
 <ul>
 <li>The exposed background may be so small that it is deemed to be not too distracting and hence can be ignored.</li>
@@ -33,7 +34,7 @@
 </ul>
 <p>The last four options are all available in Zoetic's <em>Settings</em>.</p>
 <p>A video showing the different approaches can be found <a href="https://www.youtube.com/watch?v=3gOZvn5zp_8">here</a>. The following image is a screenshot from that video. Note the exposed background of the top and right edges of the frames and how that area has been processed. The image with the smaller crop (bottom right frame) has a different aspect ratio to the other frames, due to the different aspect ratio of the crop.</p>
-<img style="margin:20px 20px;" src="../imgs/background.jpg" width="85%">
+<img style="margin:20px 20px;width:85%" src="../imgs/background.jpg" alt="background">
 <pre>
 
 </pre>

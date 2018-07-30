@@ -8,7 +8,7 @@ document.write('\
   </ul>\
   <a href="../index.html#howtouse">How to use Zoetic</a>\
   <ul>\
-  <a href="../firstproject/firstproject.html">Your first project</a>\
+  <li><a href="../firstproject/firstproject.html">Your first project</a></li>\
   </ul>\
   <a href="../furtherdiscussion/furtherdiscussion.html">Further discussion</a>\
   <a href="#">Advanced</a>\
