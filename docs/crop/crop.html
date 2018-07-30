@@ -18,21 +18,21 @@
 <div onClick="closeNav()">
 <h2>Crop</h2>
 
-<p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging all those images to a single image. Due to the alignment operation, it is very unlikely that all the image boarders will be aligned. In fact the images will probably resemble a very untidy stack of cards. In such cases the user specified crop will partially lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
-<p>Two examples showing an average image with a user specified crop, produced from a project of four images. The blue rectangle is the crop. The white rectangles are the image boarders.</p>
+<p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging the aligned images into a single image. Following the alignment, it is very unlikely that all the image boarders will be aligned. In fact the (virtual) stack of images will probably resemble a very untidy stack of cards. In such cases the user specified crop may partially lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
+<p>Two examples showing an average image, from a project of four images, with a user specified crop. The blue rectangle is the crop. The white rectangles are the image boarders of the four images.</p>
 <img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="../imgs/crop1.jpg" alt="Crop1" width="40%">
 <img style="margin:20px 20px;border:2px solid black" border="2" hspace="20" vspace="20" src="../imgs/crop2.jpg" alt="Crop2" width="40%">
-<p>In the first example, the crop is so large that none of the four images fully covers it. (Note the '4' at the top of the image.) In the second example, the crop has been resized sufficiently so that it is covered by all the images. (Note the '0' at the top of the image.) For the latter case, no background will be exposed in the resulting video. For the former, the user will need to decide on how to handle the exposed background.</p>
+<p>In the first example, the crop is so large that none of the four images fully covers it. (Note the '4' at the top of the screen.) In the second example, the crop has been resized sufficiently so that now it is covered by all the images. (Note the '0' at the top of the screen.) For the latter case, no background will be exposed in the resulting video. For the former, the user will need to decide on how to handle the exposed background:</p>
 <ul>
 <li>The exposed background may be so small that it is deemed to be not too distracting and hence can be ignored.</li>
-<li>Redo the crop so that it is completely covered by all the images. (As with the above second example.) This will produce a video with no artefacts however, sometimes, to obtain full coverage the new crop may be deemed to be too small or in the wrong location.</li>
-<li>Choose a colour of the background which minimises the distraction e.g. for a project showing a natural landscape, a shade of green may work.</li>
+<li>Redo the crop so that it is completely covered by all the images. (As with the above second example.) This will produce a video with no artefacts however the new crop may be deemed to be too small or in the wrong location.</li>
+<li>Choose a colour of the background which minimises the distraction e.g. for a project showing a natural landscape, a shade of green may work. (Grey is usually a good starting point.)</li>
 <li>Zoetic uses an image from earlier in the sequence to cover the background. If the scenes are similar, this approach may work quite well, but if they are dissimilar, weird artefacts may appear.</li>
-<li>Zoetic uses a 'zoomed' version of the image being processed to cover the background. (This is often the approach used by tv news programs where a viewer has submitted a video with a portrait aspect.)</li>
-<li>Zoetic ‘bleed’ the edges of the image being processed to cover the background. Provided the exposed area is not too large, this approach usually works quite well.</li>
+<li>Zoetic uses a 'zoomed' version of the images to cover the background. (This is often the approach used by tv news programs where a viewer has submitted a smart-phone video with a portrait aspect.)</li>
+<li>Zoetic ‘bleed’ the edges of the images to cover the background. Provided the exposed area is not too large, this approach usually works quite well.</li>
 </ul>
-<p>The last four options are all available in Zoetic's Settings.</p>
-<p>A video showing the different approaches can be found <a href="https://www.youtube.com/watch?v=3gOZvn5zp_8">here</a>. The following image is a screenshot from that video. Note the exposed background at the top and the right of the frames and how that area has been processed. The image with the smaller crop (bottom right frame) has a different aspect ratio to the other frames, due to the different aspect ratio of the crop.</p>
+<p>The last four options are all available in Zoetic's <em>Settings</em>.</p>
+<p>A video showing the different approaches can be found <a href="https://www.youtube.com/watch?v=3gOZvn5zp_8">here</a>. The following image is a screenshot from that video. Note the exposed background of the top and right edges of the frames and how that area has been processed. The image with the smaller crop (bottom right frame) has a different aspect ratio to the other frames, due to the different aspect ratio of the crop.</p>
 <img style="margin:20px 20px;" src="../imgs/background.jpg" width="85%">
 <pre>
 
