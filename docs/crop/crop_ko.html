@@ -21,8 +21,8 @@
 
 <p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging the aligned images into a single image. Following the alignment, it is very unlikely that all the image boarders will be aligned. In fact the (virtual) stack of images will probably resemble a very untidy stack of cards. In such cases the user specified crop may partially lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
 <p>Two examples showing an average image, from a project of four images, with a user specified crop. The blue rectangle is the crop. The white rectangles are the image boarders of the four images.</p>
-<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop1.jpg" alt="Crop1">
-<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop2.jpg" alt="Crop2">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop1_ko.jpg" alt="Crop1">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop2_ko.jpg" alt="Crop2">
 <p>In the first example, the crop is so large that none of the four images fully covers it. (Note the '4' at the top of the screen.) In the second example, the crop has been resized sufficiently so that now it is covered by all the images. (Note the '0' at the top of the screen.) For the latter case, no background will be exposed in the resulting video. For the former, the user will need to decide on how to handle the exposed background:</p>
 <ul>
 <li>The exposed background may be so small that it is deemed to be not too distracting and hence can be ignored.</li>
