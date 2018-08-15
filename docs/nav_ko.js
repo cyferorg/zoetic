@@ -1,16 +1,16 @@
 document.write('\
 <div id="mySidenav" class="sidenav">\
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
-  <a href="../index_ko.html">Introduction</a>\
+  <a href="../index_ko.html">소개</a>\
   <ul>\
 	<li><a href="../index_ko.html#examples">Video examples</a></li>\
 	<li><a href="../index_ko.html#onlypro">Professional version</a></li>\
   </ul>\
-  <a href="../index_ko.html#howtouse">How to use Zoetic</a>\
+  <a href="../index_ko.html#howtouse">Zoetic 사용법</a>\
   <ul>\
-  <li><a href="../firstproject/firstproject_ko.html">Your first project</a></li>\
+  <li><a href="../firstproject/firstproject_ko.html">첫번째 프로젝트</a></li>\
   </ul>\
-  <a href="../furtherdiscussion/furtherdiscussion_ko.html">Further discussion</a>\
+  <a href="../furtherdiscussion/furtherdiscussion_ko.html">추후 논의</a>\
   <a href="#">Advanced</a>\
 	<ul>\
 	<li><a href="../crop/crop_ko.html">Crop</a></li>\
