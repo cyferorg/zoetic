@@ -11,11 +11,11 @@ document.write('\
   <li><a href="../firstproject/firstproject.html">Your first project</a></li>\
   </ul>\
   <a href="../furtherdiscussion/furtherdiscussion.html">Further discussion</a>\
-  <a href="#">Advanced</a>\
+  <a href="#"><a href="../crop/crop.html">Advanced</a>\
 	<ul>\
 	<li><a href="../crop/crop.html">Crop</a></li>\
 	<li><a href="../subprojects/subprojects.html">Sub-projects</a></li>\
-	<li><a href="../layers/layers.html" onclick="closeNav()">Fun with layers</a></li>\
+	<li><a href="../layers/layers.html">Fun with layers</a></li>\
 	</ul>\
 <a href="../feedbackprivacy/feedbackprivacy.html">Feedback</a>\
 <a href="../feedbackprivacy/feedbackprivacy.html#privacy">Privacy Statement</a>\

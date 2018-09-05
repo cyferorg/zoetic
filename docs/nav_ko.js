@@ -11,7 +11,7 @@ document.write('\
   <li><a href="../firstproject/firstproject_ko.html">첫번째 프로젝트</a></li>\
   </ul>\
   <a href="../furtherdiscussion/furtherdiscussion_ko.html">추후 논의</a>\
-  <a href="#">Advanced</a>\
+  <a href="../crop/crop_ko.html">Advanced</a>\
 	<ul>\
 	<li><a href="../crop/crop_ko.html">Crop</a></li>\
 	<li><a href="../subprojects/subprojects_ko.html">Sub-projects</a></li>\
