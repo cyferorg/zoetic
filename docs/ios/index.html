@@ -9,27 +9,9 @@
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="index.html#introduction" onclick="closeNav()" >Introduction</a>
-  <ul>
-	<li><a href="index.html#examples" onclick="closeNav()">Video examples</a></li>
-	<li><a href="index.html#onlypro" onclick="closeNav()">Professional version</a></li>
-  </ul>
-  <a href="#howtouse" onclick="closeNav()">How to use Zoetic</a>
-  <ul>
-  <li><a href="firstproject/firstproject.html" onclick="closeNav()">Your first project</a></li>
-  </ul>
-  <a href="furtherdiscussion/furtherdiscussion.html" onclick="closeNav()">Further discussion</a>
-  <a href="crop/crop.html" onclick="closeNav()">Advanced</a>
-	<ul>
-	<li><a href="crop/crop.html" onclick="closeNav()">Crop</a></li>
-	<li><a href="subprojects/subprojects.html" onclick="closeNav()">Sub-projects</a></li>
-	<li><a href="layers/layers.html" onclick="closeNav()">Fun with layers</a></li>
-	</ul>
-<a href="feedbackprivacy/feedbackprivacy.html" onclick="closeNav()">Feedback</a>
-<a href="feedbackprivacy/feedbackprivacy.html#privacy" onclick="closeNav()">Privacy Statement</a>
-</div>
+
+<script src="navindex.js"></script>
+
 
 <div id="head">
 <table style="width:100%; table-layout: fixed;">
@@ -98,9 +80,9 @@
 <h4>A few of Zoetic's features</h4>
 <ul>
 <li>No artificial constraint on image resolution and number of intermediate frames</li>
-<li>Optional subtitles displaying the image dates</li>
+<li>Video subtitles showing the image dates (optional)</li>
 <li>Export and import projects</li>
-<li>Export aligned images. See <a href="https://cyferorg.github.io/zoetic/layers/layers.html">here</a> for why this might be useful
+<li>Export aligned images. See <a href="https://cyferorg.github.io/zoetic/ios/layers/layers.html">here</a> for why this might be useful.
 </ul>
 <p>&nbsp;</p>
 <a id="instructions"></a>
@@ -112,7 +94,7 @@
 <li>Use the <em>Mark Points</em> function to select the alignment points in all the images. Zoetic requires the user to specify two points in each image to align the images. These two points must be of the same locations in all the images. Therefore they must be visible (or at least accurately estimable) in all the images. Make sure you don't swap the alignment points between images otherwise you will find the images are inverted. For example, if the top-left corner and the bottom-right corner of a door are being used as the alignment points, make sure the first point is the top-left (or bottom-right) corner and the second point is the bottom-right (or top-left) corner in all the images, otherwise some images will have upside-down doors. For projects that use eyes for the alignment points, the eyes can be automatically detected. Either, from Zoetic&rsquo;s main menu choose the <em>Detect Eyes</em> function to process all the project&rsquo;s images, or from the <em>Mark Points</em> function tap the eye icon to detect eyes in the current image. In the former case, you will need to manually confirm that the eyes were correctly detected, especially for images containing more than one face.</li>
 <li>Use the <em>Crop</em> function to specify the area of the &ldquo;average&rdquo; image from which to create the video. If the series of images is of a scene photographed in a very consistent fashion (i.e. from exactly the same location and direction), a crop may not be necessary but this is very unlikely to be the case if the images were taken over an extended period. Using the &ldquo;average&rdquo; image of the series, select the required area (e.g. the area of the subject&rsquo;s head). See <a href="https://cyferorg.github.io/zoetic/crop/crop.html">here</a> for more on cropping.</li>
 <li>Tap <em>Create video</em>. Video creation can take a while. How long will depend upon the resolution of the images, the required number of intermediate steps and the processing power of the device being used.</li>
-<li>Tap <em>Play video</em>. Finally, play the video. The video is saved to a photo album called Zoetic and hence it can also be played from any external app that handles videos.</li>
+<li>Finally, tap <em>Play video</em>. The video is saved to a photo album called Zoetic and hence it can also be played from any external app that handles videos.</li>
 </ol>
 
 <script>

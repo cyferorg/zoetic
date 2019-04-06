@@ -2,10 +2,8 @@ document.write('\
 <div id="mySidenav" class="sidenav">\
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
   <a href="../index_ko.html" onclick="closeNav()">소개</a>\
-  <a href="../index_ko.html#howtouse" onclick="closeNav()">Zoetic 사용법</a>\
-  <ul>\
-  <li><a href="../firstproject/firstproject_ko.html" onclick="closeNav()">첫번째 프로젝트</a></li>\
-  </ul>\
+  <a href="../index_ko.html#instructions" onclick="closeNav()">Zoetic 사용법</a>\
+  <a href="../firstproject/firstproject_ko.html" onclick="closeNav()">첫번째 프로젝트</a>\
   <a href="../furtherdiscussion/furtherdiscussion_ko.html" onclick="closeNav()">추후 논의</a>\
   <a href="../crop/crop_ko.html" onclick="closeNav()">Advanced</a>\
 	<ul>\
