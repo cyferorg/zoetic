@@ -53,8 +53,12 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+hidden {
+	color: white;
+}
+
 #head {
   width: 100%;
-  background-color: green;
+  background-color: white;
   background-position: center;
 }
