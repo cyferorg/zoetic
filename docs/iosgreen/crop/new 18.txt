@@ -1,0 +1,13 @@
+Sub FocusButton(Button As Button)
+    Dim JO As JavaObject = Button
+    JO.RunMethod("setFocusable",Array As Object(True))
+    JO.RunMethod("setFocusableInTouchMode",Array As Object(True))
+    Button.RequestFocus
+End Sub
+
+Sub SetUpOnFocusListener(Button As Button, EventName As String)
+    FocusButton(Button) 'This will let us focus the button.
+    Dim JO As JavaObject = Button
+    Dim event As Object = JO.CreateEvent("android.view.View.OnFocusChangeListener",EventName,False)
+    JO.RunMethod("setOnFocusChangeListener",Array As Object(event))
+End Sub

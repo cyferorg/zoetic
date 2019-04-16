@@ -3,22 +3,17 @@
 <meta charset="utf-8" />
 <head>
 <title>Zoetic Further Discussion page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../zoetic.css">
-<link rel="icon" type="image/png" href="../zoeticicon.png"/>
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/png" href="zoeticicon.png"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
+    <script src="../responsive-nav.js"></script>
+  </head>
+
 <body>
 <script src="../nav.js"></script>
-<div id="head">
-<table style="width:100%; table-layout: fixed;">
-<tr>
-<th><p style="float:left; padding-left:15px; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</p></th>
-<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>
-<th><p><hidden>hidden text</hidden></p></th>
-</tr>
-</table>
-</div>
-<div onClick="closeNav()">
+
+
 <h2>Menu commands</h2>
 <p>The commands accessible from the 'hamburger' menu</p>
 <table style="width:100%">
@@ -56,7 +51,7 @@ tr:nth-child(even) {
 </tr>
 <tr>
 <td>Export aligned images</td>
-<td>Exports a zip file of the project's images after they have been aligned. See <a href="https://cyferorg.github.io/zoetic/ios/layers/layers.html">here</a> for why this might be useful.</td>
+<td>Exports a zip file of the project's images after they have been aligned. See <a href="https://cyferorg.github.io/zoetic/ios/layers/layers.html" style="color: rgb(0,0,255)">here</a> for why this might be useful.</td>
 </tr>
 <tr>
 <td>Messages and log</td>
@@ -69,10 +64,13 @@ tr:nth-child(even) {
 <table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
 <tr>
 <th><A href="javascript:window.history.back();">Back</a></th>
-<th><A href="javascript:openNav();">Contents</a></th>
+<th></th>
 <th><a href="../furtherdiscussion/furtherdiscussion.html">Further discussion</a></th>
 </tr>
 </table>
 </div>
+<script>
+  var navigation = responsiveNav("#nav", {customToggle: ".nav-toggle"});
+</script>
 </body>
 </html>

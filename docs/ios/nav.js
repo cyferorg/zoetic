@@ -1,25 +1,27 @@
 document.write('\
-<div id="mySidenav" class="sidenav">\
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>\
-  <a href="../index.html" onclick="closeNav()">Introduction</a>\
-  <a href="../index.html#instructions" onclick="closeNav()">How to use Zoetic</a>\
-  <a href="../firstproject/firstproject.html" onclick="closeNav()">Your first project</a>\
-  <a href="../menucommands/menucommands.html" onclick="closeNav()">Menu commands</a>\
-  <a href="../furtherdiscussion/furtherdiscussion.html" onclick="closeNav()">Further discussion</a>\
-  <a href="#"><a href="../crop/crop.html" onclick="closeNav()">Advanced</a>\
-	<ul>\
-	<li><a href="../crop/crop.html" onclick="closeNav()">Crop</a></li>\
-	<li><a href="../layers/layers.html" onclick="closeNav()">Fun with layers</a></li>\
-	</ul>\
-<a href="../feedbackprivacy/feedbackprivacy.html" onclick="closeNav()">Feedback and Privacy Statement</a>\
-</div>\
-<script>\
-function openNav() {\
-    document.getElementById("mySidenav").style.width = "250px";\
-}\
-\
-function closeNav() {\
-    document.getElementById("mySidenav").style.width = "0";\
-}\
-</script>\
+    <div role="navigation" id="nav" class="nav-collapse">\
+      <ul>\
+        <li><a href="../index.html#introduction">Introduction</a></li>\
+        <li><a href="../index.html#examples">Examples</a></li>\
+        <li><a href="../index.html#instructions">How to use Zoetic</a></li>\
+        <li><a href="../firstproject/firstproject.html">Your first project</a></li>\
+		<li><a href="../menucommands/menucommands.html">Menu commands</a></li>\
+		<li><a href="../furtherdiscussion/furtherdiscussion.html">Further discussion</a></li>\
+		<li><a href="../crop/crop.html">Crop</a></li>\
+		<li><a href="../layers/layers.html">Fun with layers</a></li>\
+		<li><a href="../feedbackprivacy/feedbackprivacy.html">Feedback and Privacy Statement</a></li>\
+      </ul>\
+    </div>\
+	</script>\
+	<div role="main" class="main">\
+	<div id="head">\
+	<table style="width:100%; table-layout: fixed;">\
+	<tr>\
+	<th><p style="float:left; width:1%; text-align:left;"><a href="#nav" class="nav-toggle">Menu</a></p></th>\
+	<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>\
+	<th><p></p></th>\
+	</tr>\
+	</table>\
+	</div>\
+	<hr>\
 ');
