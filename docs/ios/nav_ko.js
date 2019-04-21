@@ -1,9 +1,9 @@
 document.write('\
     <div role="navigation" id="nav" class="nav-collapse">\
       <ul>\
-        <li><a href="../index.html#introduction">소개</a></li>\
-        <li><a href="../index.html#examples">비디오 예제</a></li>\
-        <li><a href="../index.html#instructions">Zoetic 사용법</a></li>\
+        <li><a href="../index_ko.html#introduction">소개</a></li>\
+        <li><a href="../index_ko.html#examples">비디오 예제</a></li>\
+        <li><a href="../index_ko.html#instructions">Zoetic 사용법</a></li>\
         <li><a href="../firstproject/firstproject_ko.html">첫번째 프로젝트</a></li>\
 		<li><a href="../menucommands/menucommands_ko.html">Menu commands</a></li>\
 		<li><a href="../furtherdiscussion/furtherdiscussion_ko.html">추후 논의</a></li>\
