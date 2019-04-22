@@ -4,21 +4,15 @@
 <head>
 <title>Zoetic Further Discussion Korean page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../zoetic.css">
-<link rel="icon" type="image/png" href="../zoeticicon.png"/>
-</head>
+	<link rel="icon" type="image/png" href="../zoeticicon.png"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
+    <script src="../responsive-nav.js"></script>
+  </head>
+
 <body>
 <script src="../nav_ko.js"></script>
-<div id="head">
-<table style="width:100%; table-layout: fixed;">
-<tr>
-<th><p style="float:left; padding-left:5px; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</p></th>
-<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>
-<th><p style="color:green">hidden text</p></th>
-</tr>
-</table>
-</div>
-<div onClick="closeNav()">
+
 <a id="FAQ"></a>
 <h3>추후 논의</h3>
 <ul>
@@ -40,10 +34,13 @@
 <table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
 <tr>
 <th><A href="javascript:window.history.back();">Back</a></th>
-<th><A href="javascript:openNav();">Contents</a></th>
-<th><a href="../crop/crop_ko.html">Crop</a></th>
+<th></th>
+<th><a href="../crop/crop_ko.html">자르기</a></th>
 </tr>
 </table>
 </div>
+    <script>
+      var navigation = responsiveNav("#nav", {customToggle: ".nav-toggle"});
+    </script>
 </body>
 </html>

@@ -4,45 +4,30 @@
 <head>
 <title>Zoetic Main Korean page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="zoetic.css">
-<link rel="icon" type="image/png" href="zoeticicon.png"/>
-</head>
+	<link rel="icon" type="image/png" href="zoeticicon.png"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="styles.css"><!--<![endif]-->
+    <script src="responsive-nav.js"></script>
+  </head>
+
 <body>
-
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#introduction" onclick="closeNav()">소개</a>
-  <ul>
-	<li><a href="#examples" onclick="closeNav()">Video examples</a></li>
-	<li><a href="#onlypro" onclick="closeNav()">Professional version</a></li>
-  </ul>
-  <a href="#howtouse" onclick="closeNav()">Zoetic 사용법</a>
-  <ul>
-  <a href="firstproject/firstproject_ko.html" onclick="closeNav()">첫번째 프로젝트</a>
-  </ul>
-  <a href="furtherdiscussion/furtherdiscussion_ko.html" onclick="closeNav()">추후 논의</a>
-  <a href="crop/crop_ko.html" onclick="closeNav()">Advanced</a>
-	<ul>
-	<li><a href="crop/crop_ko.html" onclick="closeNav()">Crop</a></li>
-	<li><a href="subprojects/subprojects_ko.html" onclick="closeNav()">Sub-projects</a></li>
-	<li><a href="layers/layers_ko.html" onclick="closeNav()">Fun with layers</a></li>
-	</ul>
-<a href="feedbackprivacy/feedbackprivacy_ko.html" onclick="closeNav"피드백 및 버그 알림</a>
-<a href="feedbackprivacy/feedbackprivacy_ko.html#privacy" onclick="closeNav()">개인정보 보호설명</a>
-</div>
-
+<script src="navindex_ko.js"></script>
+<div role="main" class="main">
+      
+<a id="introduction"></a>
 <div id="head">
 <table style="width:100%; table-layout: fixed;">
 <tr>
-<th><p style="float:left; padding-left:5px; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</a></p></th>
+<th><p style="float:left; width:1%; text-align:left;"><a href="#nav" class="nav-toggle">Menu</a></p></th>
 <th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="imgs/zoetic2.png" style="width:128px;height:64px" alt="zoetic icon"></a></th>
 <th><a href="./index_ko.html"><img src="imgs/skorea.png" style="width:7%;min-width:25px;padding-right:5px;float:right;padding-bottom:40px" alt="korea"></a>
 <a href="./index.html"><img src="imgs/ukselected.png" style="width:7%;min-width:25px;padding-right:5px;float:right" alt="uk"></a></th>
 </tr>
 </table>
 </div>
-<div onClick="closeNav()">
-<a id="introduction"></a>
+<hr>
+	
+
 <h3>소개</h3>
 <p>세월이 지나면서 당신의 모습은 어떻게 변했을까요? 당신의 자녀들은 어떤모습으로 자랐을까요? 그리고 부모님들은요? 그리고 즐겨찾는 공원과 산과 들판의 광경은요? 또한 벌판에 빌딩이 지어지는 순간부터 완성된 건물을 보고 있는 지금, 지난 몇 달동안 의 변화들이 궁금하지 않으신가요? 궁금하시다면 간직해두셨던 사진들을 모아보세요.그리고 Zoetic이 보여주도록 해보십시오.
 </p>
@@ -89,22 +74,22 @@
 <a id="examples"></a>
 <h4>비디오 예제</h4>
 <p>유투브 참고영상 (Zoetic 시연 및 사용법)</p>
-<p><a title="유튜브 참고영상 (Zoetic 시연 및 사용법)" href="https://www.youtube.com/channel/UC9DS_eg5oE_9HmVVYuUBkNw">https://www.youtube.com/channel/UC9DS_eg5oE_9HmVVYuUBkNw</a></p>
+<p><a title="유튜브 참고영상 (Zoetic 시연 및 사용법)" href="https://www.youtube.com/channel/UC9DS_eg5oE_9HmVVYuUBkNw"  style="color: rgb(0,0,255)">https://www.youtube.com/channel/UC9DS_eg5oE_9HmVVYuUBkNw</a></p>
 <pre>
 
 </pre>
-<a id="onlypro">
+<a id="onlypro"></a>
 <h4>에서만 사용할 수 있는 기능</h4>
 <p>Zoetic의 Professional 버전에서만 사용할 수 있는 기능.</p>
 <ul>
 <li>이미지해상도 및 중간 프레임의 숫자에 인위적인 제약이 없습니다</li>
 <li>사진의 날짜를 표시하는 비디오자막을 제작할 수 있습니다</li>
 <li>프로젝트 보내기 및 가져오기</li>
-<li>정렬된 이미지들 보내기. 이것이 왜 유용한지 <a href="https://cyferorg.github.io/zoetic/layers/layers.html">여기서</a> 확인하십시오.
+<li>정렬된 이미지들 보내기. 이것이 왜 유용한지 <a href="https://cyferorg.github.io/zoetic/layers/layers.html" style="color: rgb(0,0,255)">여기서</a> 확인하십시오.</li>
 <p>설정에서 단순모드를 사용중지해야 합니다:  
 </li>
 <li>첫번째 사진뿐이 아닌 어떤 목록 속 다른 사진도 타겟으로 선택될 수 있습니다</li>
-<li>모든 이미지있어서 동일한 정렬 포인트를 식별하기 어려운 경우 <a href="https://cyferorg.github.io/zoetic/subprojects/subprojects.html">서브 프로젝트</a> 를 사용할 수 있습니다.</li>
+<li>모든 이미지있어서 동일한 정렬 포인트를 식별하기 어려운 경우 <a href="https://cyferorg.github.io/zoetic/subprojects/subprojects.html" style="color: rgb(0,0,255)">서브 프로젝트</a> 를 사용할 수 있습니다.</li>
 <li>향상된 사진관리</li>
 <li> 추가 유형의 동영상. 현재 두가지 유형이 추가로 있습니다:
 <ul>
@@ -116,7 +101,8 @@
 
 
 <p>&nbsp;</p>
-<a id="Instructions"></a><h3>Zoetic 사용법</h3>
+<a id="Instructions"></a>
+<h3>Zoetic 사용법</h3>
 <ol>
 <li>프로젝트의 주제와 필요한 사진들을 수집하십시오. (사진들이 잘 정리되어 있지 않은 이상
 대부분 이단계에서 가장 많은 시간이 소요됩니다) 가능한 한 너무 작지않은 피사체의 사진을 고르십시오. 피사체의 크기가 너무 작을 경우, 사진 크기 재조정 및 Zoom In / Zoom Out 시 비디오 결과물의 품질이 떨어질 가능성이 있습니다.</li>
@@ -156,8 +142,8 @@ function closeNav() {
 <table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
 <tr>
 <th><A href="javascript:window.history.back();">Back</a></th>
-<th><A href="javascript:openNav();">Contents</a></th>
-<th><a href="firstproject/firstproject_ko.html">Your first project</a></th>
+<th></th>
+<th><a href="firstproject/firstproject_ko.html">첫번째 프로젝트</a></th>
 </tr>
 </table>
 </div>

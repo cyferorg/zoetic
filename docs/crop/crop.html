@@ -3,22 +3,17 @@
 <meta charset="utf-8" />
 <head>
 <title>Zoetic Crop page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../zoetic.css">
-<link rel="icon" type="image/png" href="../zoeticicon.png"/>
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/png" href="../zoeticicon.png"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
+    <script src="../responsive-nav.js"></script>
+  </head>
+
 <body>
 <script src="../nav.js"></script>
-<div id="head">
-<table style="width:100%; table-layout: fixed;">
-<tr>
-<th><p style="float:left; padding-left:5px; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</p></th>
-<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>
-<th><p style="color:green">hidden text</p></th>
-</tr>
-</table>
-</div>
-<div onClick="closeNav()">
+
+
 <h2>Crop</h2>
 
 <p>The project's "average" image is used in specifying a crop of the images from which to generate the video. The "average" image is made by aligning the images to the project's target image (the first image in the gallery) and then merging the aligned images into a single image. Following the alignment, it is very unlikely that all the image boarders will be aligned. In fact the (virtual) stack of images will probably resemble a very untidy deck of cards. In such cases the edges of the crop may lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
@@ -35,18 +30,23 @@
 <li>Zoetic ‘bleed’ the edges of the images to cover the background. Provided the exposed area is not too large, this approach usually works quite well.</li>
 </ul>
 <p>The last four options are all available in Zoetic's <em>Settings</em>.</p>
-<p>A video showing the different approaches can be found <a href="https://www.youtube.com/watch?v=3gOZvn5zp_8">here</a>. The following image is a screenshot from that video. Note the exposed background of the top and right edges of the frames and how that area has been processed. The image with the smaller crop (bottom right frame) has a different aspect ratio to the other frames, due to the different aspect ratio of the crop.</p>
+<p>A video showing the different approaches can be found <a href="https://www.youtube.com/watch?v=3gOZvn5zp_8" style="color: rgb(0,0,255)">here</a>. The following image is a screenshot from that video. Note the exposed background of the top and right edges of the frames and how that area has been processed. The image with the smaller crop (bottom right frame) has a different aspect ratio to the other frames, due to the different aspect ratio of the crop.</p>
 <img style="margin:20px 20px;width:85%" src="../imgs/background.jpg" alt="background">
 <pre>
+
 
 </pre>
 <table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
 <tr>
 <th><A href="javascript:window.history.back();">Back</a></th>
-<th><A href="javascript:openNav();">Contents</a></th>
+<th></th>
 <th><a href="../subprojects/subprojects.html">Sub-projects</a></th>
 </tr>
 </table>
 </div>
+</div>
+    <script>
+      var navigation = responsiveNav("#nav", {customToggle: ".nav-toggle"});
+    </script>
 </body>
 </html>

@@ -3,32 +3,25 @@
 <meta charset="utf-8" />
 <head>
 <title>Zoetic Feedback and Privacy page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="../zoetic.css">
-<link rel="icon" type="image/png" href="../zoeticicon.png"/>
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/png" href="../zoeticicon.png"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
+    <script src="../responsive-nav.js"></script>
+  </head>
+
 <body>
 <script src="../nav.js"></script>
-<div id="head">
-<table style="width:100%; table-layout: fixed;">
-<tr>
-<th><p style="float:left; padding-left:5px; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</p></th>
-<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>
-<th><p style="color:green">hidden text</p></th>
-</tr>
-</table>
-</div>
-<div onClick="closeNav()">
-<a id="feedback"></a>
+
+
 <h2>Feedback / Bug Reports</h2>
-<p>Please send email to <a href="mailto:cyferltd@gmail.com?subject=Zoetic">cyferltd@gmail.com</a> rather than through the Play Store&rsquo;s review section. We have no way to help you or contact you through reviews.</p>
+<p>Please send email to <a href="mailto:cyferltd@gmail.com?subject=Zoetic" style="color: rgb(0,0,255)">cyferltd@gmail.com</a> rather than through the Play Store&rsquo;s review section. We have no way to help you or contact you through reviews.</p>
 <p>&nbsp;</p>
 <a id="privacy"></a>
 <h2>Privacy Statement</h2>
 <p>No personal information is processed or collected. In fact, no information whatsoever leaves your device unless you upload the resulting video and/or images to a third party, such as Google Photos. All processing of the images is undertaken on your device.</p>
 <p>If you send logs to Zoetic&rsquo;s author (to help with fault finding) then a small amount of information about your device (model, Android version etc) is included in the logs, in addition to the process flow that Zoetic took up to the point you submit the logs. Zoetic&rsquo;s settings file and current project&rsquo;s settings file are also included in the submission. Paths and project names are likely to be included in the files so you should ensure that when submitting a log you do not use project names or paths that contain personal, or any other form of sensitive, information. You may wish to check what is being submitted by, for example, emailing the logs to yourself before emailing them to Zoetic's author.</p>
 <p>The face/eye detection function uses a capability provided by Google. It runs locally on the device (i.e. images are not uploaded to Google for processing) but if there is still a concern that images might be processed by Google, Zoetic&rsquo;s <em>Settings</em> page allows for the function to be hidden and hence unusable.</p>
-</div>
 
 <pre>
 
@@ -36,9 +29,14 @@
 <table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
 <tr>
 <th><A href="javascript:window.history.back();">Back</a></th>
-<th><A href="javascript:openNav();">Contents</a></th>
-<th><p style="color:lightgrey">hidden</p></th>
+<th></th>
+<th></th>
 </tr>
 </table>
+</div>
+</div>
+    <script>
+      var navigation = responsiveNav("#nav", {customToggle: ".nav-toggle"});
+    </script>
 </body>
 </html>
