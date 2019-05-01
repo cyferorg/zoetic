@@ -11,12 +11,11 @@
 
 body,div,
 h1,h2,p,
- {
+ol,ul,li {
   margin: 0;
   padding: 0;
   border: 0;
 }
-
 
 @-webkit-viewport { width: device-width; }
 @-moz-viewport { width: device-width; }
