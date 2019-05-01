@@ -35,7 +35,7 @@ function googleTranslateElementInit() {
 <img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/ex4.jpg" alt="Example4">
 </p>
 <p>As you will see, it is very difficult to identify two alignment points that are locatable in the four images. In such a situation, different approaches might be taken:</p>
-<ul>
+<ul class="inline">
 <li>Only use the images where alignment points can be identified. If lucky, this reduced set of images may still be acceptable.</li>
 <li>Estimate the location of alignment points. This is very unlikely to produce good results.</li>
 <li>Use Zoetic's Sub-projects capability.</li>
@@ -93,7 +93,7 @@ function googleTranslateElementInit() {
 </pre>
 <p>To render the three projects to a single video, Zoetic must treat each of the three projects as sub-projects. To identify projects as sub-projects, the project names must follow a numerical sequence e.g. flat1, flat2, flat3; and Zoetic's <em>Process sub-projects</em> function must be enabled within <em>Settings</em>. Then, when the first project is loaded (flat1 in this example), Zoetic will process the additional sub-projects as being part of the explicitly loaded project (flat1).</p>
 <p>These are the steps to follow:</p>
-<ol>
+<ol class="inline">
 <li>In the <em>Settings</em>, enable <em>Process sub-projects</em>.</li>
 <li>Create the sub-projects with names that are numerically consecutive e.g flat1, flat2, flat3…</li>
 <li>Load the first project and ensure the target image has been set correctly. The target image settings of the other sub-projects are not used. I.e. the first sub-project's target image will be used as the target for the entire project and all the images in the subsequent sub-projects will be aligned with that image.</li>

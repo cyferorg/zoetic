@@ -17,13 +17,13 @@ ol,ul,li {
   border: 0;
 }
 
-ul.demo {
+ul.inline {
   margin: default;
   padding: default;
   list-style-position: inside;
 }
 
-ol.demo {
+ol.inline {
   margin: default;
   padding: default;
   list-style-position: inside;
