@@ -17,10 +17,9 @@ ol,ul,li {
   border: 0;
 }
 
-ol2,ul2,li2{
-  margin: 10;
-  padding: 10;
-  border: 10;
+ul.demo {
+  margin: 100;
+  padding: 100;
 }
 
 @-webkit-viewport { width: device-width; }
