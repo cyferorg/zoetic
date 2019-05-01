@@ -17,6 +17,18 @@ ol,ul,li {
   border: 0;
 }
 
+ul.inline {
+  margin: default;
+  padding: default;
+  list-style-position: inside;
+}
+
+ol.inline {
+  margin: default;
+  padding: default;
+  list-style-position: inside;
+}
+
 @-webkit-viewport { width: device-width; }
 @-moz-viewport { width: device-width; }
 @-ms-viewport { width: device-width; }
