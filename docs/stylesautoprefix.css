@@ -18,8 +18,15 @@ ol,ul,li {
 }
 
 ul.demo {
-  margin: 100;
-  padding: 100;
+  margin: default;
+  padding: default;
+  list-style-position: inside;
+}
+
+ol.demo {
+  margin: default;
+  padding: default;
+  list-style-position: inside;
 }
 
 @-webkit-viewport { width: device-width; }
