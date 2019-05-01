@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="utf-8" />
+<head>
+<title>Zoetic Sub-projects Korean page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../zoetic.css">
+<link rel="icon" type="image/png" href="../zoeticicon.png"/>
+</head>
+<body>
+<script src="../nav_ko.js"></script>
+<div id="head">
+<table style="width:100%; table-layout: fixed;">
+<tr>
+<th><p style="float:left; padding-left:5px; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</p></th>
+<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>
+<th><p style="color:green">hidden text</p></th>
+</tr>
+</table>
+</div>
+<div onClick="closeNav()">
+<h3>이 페이지는 아직 번역되지 않았습니다. 이 페이지의 Google 번역을 사용해보십시오.</h3>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<h2>Sub-projects</h2>
+
+<p>(Pro version only)</p>
+
+<p>Sometimes it is not possible to identify two alignment points that are visible in all the project’s images. Typically, this is when the scene changes considerably. Such an example is the Flats project. The initial photo is of a garden, then there is a sequence of photos of ground clearing and, finally, a sequence of the building’s construction.</p> 
+
+<p>These are four images from the Flats project.</p>
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/ex1.jpg" alt="Example1">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/ex2.jpg" alt="Example2">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/ex3.jpg" alt="Example3">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/ex4.jpg" alt="Example4">
+<p>As you will see, it is very difficult to identify two alignment points that are locatable in the four images. In such a situation, different approaches might be taken:</p>
+<ul>
+<li>Only use the images where alignment points can be identified. If lucky, this reduced set of images may still be acceptable.</li>
+<li>Estimate the location of alignment points. This is very unlikely to produce good results.</li>
+<li>Use Zoetic's Sub-projects capability.</li>
+</ul>
+<p>The following describes the last option.</p>
+<p>Examine the set of images that make up the project and split them into separate projects containing sub-sets of images, with each project containing images where it is possible to identify alignment points. One constraint when forming these sub-sets is that the last image of a sub-set must be the same image as the first image of the following sub-set. This means that it must be possible to identify in the first/last image the alignment points used in both sub-sets.</p>
+<p>The Flats project was split into three projects covering (1) original garden; (2) ground clearing; (3) construction of the flats. The alignment points used by the three projects were:</p>
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/subset1.jpg" alt="Subset1">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/subset2.jpg" alt="Subset2">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/subset3.jpg" alt="Subset3">
+<p> These are the first and last images of each of the three projects. Note that the last image is the same as the following project's first image, and that the alignment points presented above are identifiable in the corresponding last and first images.
+<p></p>
+<table>
+<tr>
+<td>
+<img style="margin:20px 20px;border:2px solid black;width:80%" src="../imgs/ex1.jpg" alt="First sub1">
+</td>
+<td>
+<img style="margin:20px 20px;border:2px solid black;width:80%" src="../imgs/ex2.jpg" alt="Last sub1">
+</td>
+</tr>
+<tr>
+<td style="text-align: center">Project1 - first image. Alignment points - windows corners</td>
+<td style="text-align: center">Project1 - last image. Alignment points - windows corners</td>
+</tr>
+<tr>
+<td>
+<img style="margin:20px 20px;border:2px solid black;width:80%" src="../imgs/ex2.jpg" alt="First sub2">
+</td>
+<td>
+<img style="margin:20px 20px;border:2px solid black;width:80%" src="../imgs/sub2and3.jpg" alt="Last sub2">
+</td>
+</tr>
+<tr>
+<td style="text-align: center">Project2 - first image. Alignment points - points on fence</td>
+<td style="text-align: center">Project2 - last image. Alignment points - points on fence</td>
+</tr>
+<tr>
+<td>
+<img style="margin:20px 20px;border:2px solid black;width:80%" src="../imgs/sub2and3.jpg" alt="First sub2" >
+</td>
+<td>
+<img style="margin:20px 20px;border:2px solid black;width:80%" src="../imgs/ex4.jpg" alt="Last sub4">
+</td>
+</tr>
+<tr>
+<td style="text-align: center">Project3 - first image. Alignment points - points on 1st floor</td>
+<td style="text-align: center">Project3 - last image. Alignment points - points on 1st floor</td>
+</tr>
+</table>
+<p>To render the three projects to a single video, Zoetic must treat each of the three projects as sub-projects. To identify projects as sub-projects, the project names must follow a numerical sequence e.g. flat1, flat2, flat3; and Zoetic's <em>Process sub-projects</em> function must be enabled within <em>Settings</em>. Then, when the first project is loaded (flat1 in this example), Zoetic will process the additional sub-projects as being part of the explicitly loaded project (flat1).</p>
+<p>These are the steps to follow:</p>
+<ol>
+<li>In the <em>Settings</em>, enable <em>Process sub-projects</em>.</li>
+<li>Create the sub-projects with names that are numerically consecutive e.g flat1, flat2, flat3…</li>
+<li>Load the first project and ensure the target image has been set correctly. The target image settings of the other sub-projects are not used. I.e. the first sub-project's target image will be used as the target for the entire project and all the images in the subsequent sub-projects will be aligned with that image.</li>
+<li>Make sure the last image of each sub-project is the same as the first image in the following sub-project, e.g. the last image in sub-project flat1 must be the same as the first image in sub-project flat2. A warning is displayed when this is not the case.</li>
+<li>Now follow the usual process of creating the video (make any required changes to the settings, set the crop, make the video). A message indicating the number of sub-projects being used will be displayed.</li>
+</ol>
+<p>NB 1. If at step 3, flat2 was loaded instead of flat1, the flat1 project would be skipped and the video would be created using the target from flat2 and images from the numerically higher projects.</p>
+<p>NB 2. The <em>Sort</em> function only operates on the explicitly loaded project. To re-order, delete, add (etc) images to a sub-project, the project corresponding to the sub-project must be loaded into Zoetic.</p>
+<pre>
+
+</pre>
+<table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
+<tr>
+<th><A href="javascript:window.history.back();">Back</a></th>
+<th><A href="javascript:openNav();">Contents</a></th>
+<th><a href="../layers/layers_ko.html">Fun with layers</a></th>
+</tr>
+</table>
+</div>
+</body>
+</html>

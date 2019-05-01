@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="utf-8" />
+<head>
+<title>Zoetic Crop Korean page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../zoetic.css">
+<link rel="icon" type="image/png" href="../zoeticicon.png"/>
+</head>
+<body>
+<script src="../nav_ko.js"></script>
+<div id="head">
+<table style="width:100%; table-layout: fixed;">
+<tr>
+<th><p style="float:left; padding-left:5px; width:33.3%; text-align:left;cursor:pointer;font-size: 150%;" onclick="openNav()">&#9776;</p></th>
+<th><a href="https://play.google.com/store/apps/details?id=uk.cyferltd.zoeticpro"><img src="../imgs/zoetic2.png" width="128" height="64" alt="zoetic icon"></a></th>
+<th><p style="color:green">hidden text</p></th>
+</tr>
+</table>
+</div>
+<div onClick="closeNav()">
+<h3>이 페이지는 아직 번역되지 않았습니다. 이 페이지의 Google 번역을 사용해보십시오.</h3>
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<h2>Crop</h2>
+
+<p>Zoetic uses a user specified crop of the project's "average" image when generating the project's video. The "average" image is made by aligning all the images to the target image and then merging the aligned images into a single image. Following the alignment, it is very unlikely that all the image boarders will be aligned. In fact the (virtual) stack of images will probably resemble a very untidy stack of cards. In such cases the user specified crop may partially lie outside some image boarders. (Generally, the wider/larger the crop, the greater the number of images that will not fully cover the crop.)</p>
+<p>Two examples showing an average image, from a project of four images, with a user specified crop. The blue rectangle is the crop. The white rectangles are the image boarders of the four images.</p>
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop1_ko.jpg" alt="Crop1">
+<img style="margin:20px 20px;border:2px solid black;width:40%" src="../imgs/crop2_ko.jpg" alt="Crop2">
+<p>In the first example, the crop is so large that none of the four images fully covers it. (Note the '4' at the top of the screen.) In the second example, the crop has been resized sufficiently so that now it is covered by all the images. (Note the '0' at the top of the screen.) For the latter case, no background will be exposed in the resulting video. For the former, the user will need to decide on how to handle the exposed background:</p>
+<ul>
+<li>The exposed background may be so small that it is deemed to be not too distracting and hence can be ignored.</li>
+<li>Redo the crop so that it is completely covered by all the images. (As with the above second example.) This will produce a video with no artefacts however the new crop may be deemed to be too small or in the wrong location.</li>
+<li>Choose a colour of the background which minimises the distraction e.g. for a project showing a natural landscape, a shade of green may work. (Grey is usually a good starting point.)</li>
+<li>Zoetic uses an image from earlier in the sequence to cover the background. If the scenes are similar, this approach may work quite well, but if they are dissimilar, weird artefacts may appear.</li>
+<li>Zoetic uses a 'zoomed' version of the images to cover the background. (This is often the approach used by tv news programs where a viewer has submitted a smart-phone video with a portrait aspect.)</li>
+<li>Zoetic ‘bleed’ the edges of the images to cover the background. Provided the exposed area is not too large, this approach usually works quite well.</li>
+</ul>
+<p>The last four options are all available in Zoetic's <em>Settings</em>.</p>
+<p>A video showing the different approaches can be found <a href="https://www.youtube.com/watch?v=3gOZvn5zp_8">here</a>. The following image is a screenshot from that video. Note the exposed background of the top and right edges of the frames and how that area has been processed. The image with the smaller crop (bottom right frame) has a different aspect ratio to the other frames, due to the different aspect ratio of the crop.</p>
+<img style="margin:20px 20px;width:85%" src="../imgs/background.jpg" alt="background">
+<pre>
+
+</pre>
+<table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
+<tr>
+<th><A href="javascript:window.history.back();">Back</a></th>
+<th><A href="javascript:openNav();">Contents</a></th>
+<th><a href="../subprojects/subprojects_ko.html">Sub-projects</a></th>
+</tr>
+</table>
+</div>
+</body>
+</html>
