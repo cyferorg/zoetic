@@ -38,20 +38,24 @@
 <p>As follows:</p>
 <ol class="inline">
 <li>Export the images using Zoetic's <em>Export aligned images</em> function (within Zoetic's menu). Then, on the platform (Windows, Linux, Mac) you will be using, unzip the Zoetic exported file to produce the files: composite.jpg, image1.jpg, image2.jpg...</li>
+<br/>
 <li>Follow either Approach 1 or Approach 2:
-<ul class="inline">
-<li><p><b>Approach 1:</b> With software such as ImageMagick (available for free) convert the images into a mult-layer file format, for example .PSD. Assuming ImageMagick has been properly installed, enter at a command line:</p>
-
-<code>convert composite.jpg image0.jpg image1.jpg image2.jpg image.psd</code>
+<br/>
+<br/>
+<p><b>Approach 1:</b> With software such as ImageMagick (available for free) convert the images into a mult-layer file format, for example .PSD. Assuming ImageMagick has been properly installed, enter at a command line:
+<br/>
+<br/>
+<code>convert composite.jpg image0.jpg image1.jpg image2.jpg image.psd</code></p>
 
 <p>Add as many Zoetic exported JPGs to the command as required. The resulting image.psd can be opened in GIMP or Photoshop or any other application that supports PSD files.</p>
 
-<p>Note that the first file following "convert", composite.jpg, is not added to a layer but is only used to provide a preview of the PSD file.</p></li>
-<li><p><b>Approach 2:</b> Drag and drop image1.jpg, image2.jpg... on to GIMP (or whichever application you are using) ensuring that the application loads each image as a separate layer. It is up to the reader to know how to use their image editor but they may need to add an alpha channel to each of the layers.</p></li>
-</ul>
+<p>Note that the first file following "convert", composite.jpg, is not added to a layer but is only used to provide a preview of the PSD file.</p>
+<p><b>Approach 2:</b> Drag and drop image1.jpg, image2.jpg... on to GIMP (or whichever application you are using) ensuring that the application loads each image as a separate layer. It is up to the reader to know how to use their image editor but they may need to add an alpha channel to each of the layers.</p>
+
 </li>
 <li>Within your image editor of choice, play around with the layers...</li>
 </ol>
+<br/>
 <p>A video of GIMP in action can be found <a href="https://www.youtube.com/watch?v=O4jKK_K2YYs" style="color: rgb(0,0,255)">here.</a>
 <pre>
 
