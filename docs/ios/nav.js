@@ -9,6 +9,7 @@ document.write('\
 		<li><a href="../furtherdiscussion/furtherdiscussion.html">Further discussion</a></li>\
 		<li><a href="../crop/crop.html">Crop</a></li>\
 		<li><a href="../layers/layers.html">Fun with layers</a></li>\
+		<li><a href="../posters/posters.html">Posters <em>[New]</em></a></li>\
 		<li><a href="../feedbackprivacy/feedbackprivacy.html">Feedback and Privacy Statement</a></li>\
       </ul>\
     </div>\

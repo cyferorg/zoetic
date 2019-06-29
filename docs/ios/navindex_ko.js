@@ -9,6 +9,7 @@ document.write('\
 		<li><a href="furtherdiscussion/furtherdiscussion_ko.html">추후 논의</a></li>\
 		<li><a href="crop/crop_ko.html">자르기</a></li>\
 		<li><a href="layers/layers_ko.html">레이어가있는 재미</a></li>\
+		<li><a href="posters/posters_ko.html">포스터 <em>[New]</em></a></li>\
 		<li><a href="feedbackprivacy/feedbackprivacy_ko.html">피드백 및 버그 알림</a></li>\
       </ul>\
     </div>\
