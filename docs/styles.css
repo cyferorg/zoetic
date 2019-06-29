@@ -29,6 +29,14 @@ ol.inline {
   list-style-position: inside;
 }
 
+img.scale {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 @-webkit-viewport { width: device-width; }
 @-moz-viewport { width: device-width; }
 @-ms-viewport { width: device-width; }
@@ -241,12 +249,4 @@ a:hover {
 @media screen and (min-width: 76em) {
   .nav-collapse { width: 18em }
   .main { width: auto; left: 18em }
-}
-
-img {
-    padding: 0;
-    display: block;
-    margin: 0 auto;
-    max-height: 100%;
-    max-width: 100%;
 }
