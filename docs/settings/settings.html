@@ -33,7 +33,6 @@
 <td>Order by date</td>
 <td>Use images' dates rather than the order the images were added to the project for sorting. The sort is implemented by tapping the sort buttons in the Sort screen.</td>
 </tr>
-<tr>
 </table>
 
 
@@ -44,76 +43,7 @@
 <td>Number of intermediate images</td>
 <td>Number of images to generate between each real image. The greater the number, the smoother the video.</td>
 </tr>
-<tr>
-<td>Use Relative Number of Intermediates <i>To be added in next Zoetic release</i></td>
-<td>Distribute the generated intermediate images, specified above, relative to the period between successive images. (All images must be dated and sorted.) The longer the period, the greater the number of intermediate images. For example, for a project using a value of 10 for 'number of intermediate images' and with three images: image1 (1 Jan 2000), image2 (2 Jan 2000), image3 (4 Jan 2000); the intermediate images would be distributed as image1 [7 intermediate images] image2 [14 intermediate images] image3. This is because there is one day between image1 and image2, and 2 days between image2 and image3.</td>
-</tr> 
-<tr>
-<td>Frames Per Second (FPS)</td>
-<td>Speed of the generated video. The greater the number the smoother the video. The length of the video will be: Number_of_Images_in_the_Project x Number_of_Intermediate_Images / FPS.</td>
-</tr>
-<tr>
-<td>Maximum output image resolution</td>
-<td>Output with greater height or width will be sampled to the specified value. <b>(Pro only and Simple Mode off)</b></td>
-</tr>
-<tr>
-<td>Megabits per second</td>
-<td>Higher values improve quality of the video but also increase the file size. <b>(Pro only and Simple Mode off)</b></td>
-</tr>
-<tr>
-<td>Image background colour</td>
-<td>Specify colour to use to fill any exposed background when the crop is not fully covered by an image. <b>(Pro only and Simple Mode off)</b>/td>
-</tr>
-<tr>
-<td>Fill exposed crop</td>
-<td>Approach to filling any exposed background when the crop is not fully covered by an image. Options:
-<br>
-Do nothing - just fill with the colour specified above<br>
-Bleed edges - replicate the colours from around the edge of the exposed area<br>
-Prev image - copy the relevant area from the previous image<br>
-Zoom image - magnify the current image so that the crop is fully covered<br>
-Note that usually none of these options gives an ideal solution unless the areas to be covered are small therefore it is always best to try and set the crop so that it is covered by all the images.<br>
- <b>(Pro only and Simple Mode off)</b></td>
-</tr>
-<tr>
-<td>Pause at start</td>
-<td>Number of seconds to show the first image to act as an intro to the video. <b>(Pro only)</b></td>
-</tr>
-<tr>
-<td>Pause at end</td>
-<td>Number of seconds to show the last image to act as an outro to the video. <b>(Pro only)</b></td>
-</tr>
-<tr>
-<td>Add start and end pause</td>
-<td>Show first and last images for one second to act as intro and outro to the video. <b>(Non-pro version only)</b></td>
-</tr>
-<tr>
-<td>Filter to use when combining images</td>
-<td>Specifies how the two images being transitioned between should be combined. Options: <br>
-Original - more weight to original images. This will produce an effect where the original (real) images are given more prominence.<br>
-Equal - equal weighting. This will produce an effect where the transition might be deemed to be more continuous but the video will give an equal prominence to the real and unreal (computer generated) images.<br>
-<b>(Pro only and Simple Mode off)</b></td>
-</tr>
-<tr>
-<td>Subtitle video</td>
-<td>Produce subtitles by displaying the image dates. The subtitles can be written either as an external .srt file or 'burnt' into the video. <b>(Pro only)</b></td>
-</tr>
-<tr>
-<td>Only show year</td>
-<td>Subtitles will only display the date's year, not the full date. <b>(Pro only)</b></td>
-</tr>
-<tr>
-<td>Only process images that completely cover the crop</td>
-<td>Only process images where the crop is fully covered by the image. If not set, some background may be visible in the video in which case you may wish to investigate the above "Fill exposed crop" setting. <b>(Pro only and Simple Mode off)</b>/td>
-</tr>
-<tr>
-<td>Number of blank frames at start of video</td>
-<td>Useful for syncing the start of the video with another video. This is very unlikely to be useful to most users. <b>(Pro only and Simple Mode off)</b> </td>
-</tr>
-<tr>
-<td>Folder to save video</td>
-<td>The videos generated can be saved either to a folder local to the Zoetic app or to the global Movie folder.</td>
-</tr>
+
 </table>
 
 <table style="width:100%">
