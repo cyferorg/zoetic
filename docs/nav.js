@@ -6,6 +6,7 @@ document.write('\
         <li><a href="../index.html#instructions">How to use Zoetic</a></li>\
         <li><a href="../firstproject/firstproject.html">Your first project</a></li>\
 		<li><a href="../menucommands/menucommands.html">Menu commands</a></li>\
+		<li><a href="../settings/settings.html">Settings</a></li>\
 		<li><a href="../furtherdiscussion/furtherdiscussion.html">Further discussion</a></li>\
 		<li><a href="../crop/crop.html">Crop</a></li>\
 		<li><a href="../subprojects/subprojects.html">Sub-projects</a></li>\

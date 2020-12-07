@@ -6,6 +6,7 @@ document.write('\
         <li><a href="#instructions">Zoetic 사용법</a></li>\
         <li><a href="firstproject/firstproject_ko.html">첫번째 프로젝트</a></li>\
 		<li><a href="menucommands/menucommands_ko.html">메뉴 명령</a></li>\
+		<li><a href="../settings/settings_ko.html">세팅</a></li>\
 		<li><a href="furtherdiscussion/furtherdiscussion_ko.html">추후 논의</a></li>\
 		<li><a href="crop/crop_ko.html">자르기</a></li>\
 		<li><a href="subprojects/subprojects_ko.html">하위 프로젝트</a></li>\
