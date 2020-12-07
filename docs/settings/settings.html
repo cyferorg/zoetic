@@ -43,10 +43,13 @@
 <td>Number of intermediate images</td>
 <td>Number of images to generate between each real image. The greater the number, the smoother the video.</td>
 </tr>
-
+<tr>
+<td>Use Relative Number of Intermediates <i>To be added in next Zoetic release</i></td>
+<td>Distribute the generated intermediate images, specified above, relative to the period between successive images. (All images must be dated and sorted.) The longer the period, the greater the number of intermediate images. For example, for a project using a value of 10 for 'number of intermediate images' and with three images: image1 (1 Jan 2000), image2 (2 Jan 2000), image3 (4 Jan 2000); the intermediate images would be distributed as image1 [7 intermediate images] image2 [14 intermediate images] image3. This is because there is one day between image1 and image2, and 2 days between image2 and image3.</td>
+</tr> 
 <tr>
 <td>Frames Per Second (FPS)</td>
-<td>Speed of the generated video. The greater the number the smoother the video. The length of the video will be: No_of_Images x No_of_Intermediate / FPS.</td>
+<td>Speed of the generated video. The greater the number the smoother the video. The length of the video will be: 'Num of images' x 'Num of intermediate images' / FPS.</td>
 </tr>
 <tr>
 <td>Maximum output image resolution</td>
@@ -60,7 +63,17 @@
 <td>Image background colour</td>
 <td>Specify colour to use to fill any exposed background when the crop is not fully covered by an image. <b>(Pro only and Simple Mode off)</b>/td>
 </tr>
-
+<tr>
+<td>Fill exposed crop</td>
+<td>Approach to filling any exposed background when the crop is not fully covered by an image. Options:
+<br>
+Do nothing - just fill with the colour specified above<br>
+Bleed edges - replicate the colours from around the edge of the exposed area<br>
+Prev image - copy the relevant area from the previous image<br>
+Zoom image - magnify the current image so that the crop is fully covered<br>
+Note that usually none of these options gives an ideal solution unless the areas to be covered are small therefore it is always best to try and set the crop so that it is covered by all the images.<br>
+ <b>(Pro only and Simple Mode off)</b></td>
+</tr>
 <tr>
 <td>Pause at start</td>
 <td>Number of seconds to show the first image to act as an intro to the video. <b>(Pro only)</b></td>
