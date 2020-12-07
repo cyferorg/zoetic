@@ -44,6 +44,62 @@
 <td>Number of images to generate between each real image. The greater the number, the smoother the video.</td>
 </tr>
 
+<tr>
+<td>Frames Per Second (FPS)</td>
+<td>Speed of the generated video. The greater the number the smoother the video. The length of the video will be: Number_of_Images_in_the_Project x Number_of_Intermediate_Images / FPS.</td>
+</tr>
+<tr>
+<td>Maximum output image resolution</td>
+<td>Output with greater height or width will be sampled to the specified value. <b>(Pro only and Simple Mode off)</b></td>
+</tr>
+<tr>
+<td>Megabits per second</td>
+<td>Higher values improve quality of the video but also increase the file size. <b>(Pro only and Simple Mode off)</b></td>
+</tr>
+<tr>
+<td>Image background colour</td>
+<td>Specify colour to use to fill any exposed background when the crop is not fully covered by an image. <b>(Pro only and Simple Mode off)</b>/td>
+</tr>
+
+<tr>
+<td>Pause at start</td>
+<td>Number of seconds to show the first image to act as an intro to the video. <b>(Pro only)</b></td>
+</tr>
+<tr>
+<td>Pause at end</td>
+<td>Number of seconds to show the last image to act as an outro to the video. <b>(Pro only)</b></td>
+</tr>
+<tr>
+<td>Add start and end pause</td>
+<td>Show first and last images for one second to act as intro and outro to the video. <b>(Non-pro version only)</b></td>
+</tr>
+<tr>
+<td>Filter to use when combining images</td>
+<td>Specifies how the two images being transitioned between should be combined. Options: <br>
+Original - more weight to original images. This will produce an effect where the original (real) images are given more prominence.<br>
+Equal - equal weighting. This will produce an effect where the transition might be deemed to be more continuous but the video will give an equal prominence to the real and unreal (computer generated) images.<br>
+<b>(Pro only and Simple Mode off)</b></td>
+</tr>
+<tr>
+<td>Subtitle video</td>
+<td>Produce subtitles by displaying the image dates. The subtitles can be written either as an external .srt file or 'burnt' into the video. <b>(Pro only)</b></td>
+</tr>
+<tr>
+<td>Only show year</td>
+<td>Subtitles will only display the date's year, not the full date. <b>(Pro only)</b></td>
+</tr>
+<tr>
+<td>Only process images that completely cover the crop</td>
+<td>Only process images where the crop is fully covered by the image. If not set, some background may be visible in the video in which case you may wish to investigate the above "Fill exposed crop" setting. <b>(Pro only and Simple Mode off)</b>/td>
+</tr>
+<tr>
+<td>Number of blank frames at start of video</td>
+<td>Useful for syncing the start of the video with another video. This is very unlikely to be useful to most users. <b>(Pro only and Simple Mode off)</b> </td>
+</tr>
+<tr>
+<td>Folder to save video</td>
+<td>The videos generated can be saved either to a folder local to the Zoetic app or to the global Movie folder.</td>
+</tr>
 </table>
 
 <table style="width:100%">
