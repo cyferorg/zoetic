@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<head>
+<title>Zoetic Settings page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" type="image/png" href="../zoeticicon.png"/>
+    <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
+    <script src="../responsive-nav.js"></script>
+  </head>
+
+<body>
+<script src="../nav.js"></script>
+<style>
+#settingstable tr:nth-child(even) {
+  background-color: #dddddd;
+}
+#settingstable table, #settingstable th, #settingstable td {
+  border: 1px solid black;
+}
+</style>
+<div id="settingstable">
+<h2>Settings</h2>
+
+<p>The settings and commands available on the Settings page.</p>
+
+
+
+<table style="width:100%">
+
+<h3>Video creation</h3>
+<tr>
+<td>Number of intermediate images</td>
+<td>Number of images to generate between each real image. The greater the number, the smoother the video.</td>
+</tr>
+<tr>
+<td>Use Relative Number of Intermediates <i>To be added in next Zoetic release</i></td>
+<td>Distribute the generated intermediate images, specified above, relative to the period between successive images. (All images must be dated and sorted.) The longer the period, the greater the number of intermediate images. For example, for a project using a value of 10 for 'number of intermediate images' and with three images: image1 (1 Jan 2000), image2 (2 Jan 2000), image3 (4 Jan 2000); the intermediate images would be distributed as image1 [7 intermediate images] image2 [14 intermediate images] image3. This is because there is one day between image1 and image2, and 2 days between image2 and image3.</td>
+</tr> 
+<tr>
+<td>Frames Per Second (FPS)</td>
+<td>Speed of the generated video. The greater the number the smoother the video. The length of the video will be: 'Num of images' x 'Num of intermediate images' / FPS.</td>
+</tr>
+
+
+
+<tr>
+<td>Pause at start</td>
+<td>Number of seconds to show the first image to act as an intro to the video. ></td>
+</tr>
+<tr>
+<td>Pause at end</td>
+<td>Number of seconds to show the last image to act as an outro to the video. ></td>
+</tr>
+<tr>
+<td>Add start and end pause</td>
+<td>Show first and last images for one second to act as intro and outro to the video.></td>
+</tr>
+<tr>
+<td>Maximum output image resolution</td>
+<td>Output with greater height or width will be sampled to the specified value.</td>
+</tr>
+<tr>
+<td>Only use standard video resolutions/td>
+<td>The use of non-standard resolutions may result in problems with playback in some apps.</b></td>
+</tr>
+<tr>
+<td>Image background colour</td>
+<td>Specify colour to use to fill any exposed background when the crop is not fully covered by an image.</td>
+</tr>
+
+<tr>
+<td>Subtitle video</td>
+<td>Produce subtitles by displaying the image dates. The subtitles can be written either as an external .srt file or 'burnt' into the video. ></td>
+</tr>
+<tr>
+<td>Only show year</td>
+<td>Subtitles will only display the date's year, not the full date. ></td>
+</tr>
+
+<tr>
+<td>Save videos to Photos/iCloud</td>
+<td>Videos will be saved to Photos/iCloud as well as saved locally.</td>
+</tr>
+</table>
+
+<table style="width:100%">
+
+<h3>Images</h3>
+
+<tr>
+<td>Maximum input image resolution</td>
+<td>Images with greater height or width will be sampled to the specified value. Allowing the use of large images may create out of memory problems.></td>
+</tr>
+<tr>
+<td>Warn when image resolution is reduced</td>
+<td>A warning will be displayed when images imported into a project have been reduced in size.</td>
+</tr>
+<tr>
+<td>Pre-aligned mode</td>
+<td>Assume all images are already aligned and hence don't need marking.</td>
+</tr>
+</table>
+
+<table style="width:100%">
+<h3>Misc</h3>
+
+<tr>
+<td>Hide help buttons</td>
+<td>Once you are familiar with Zoetic\'s interface, de-clutter the screens.</td>
+</tr>
+<tr>
+<td>Tap to set default values</td>
+<td>Reset to default values.</td>
+</tr>
+<tr>
+<td>Tap to reset all warning and guidance messages</td>
+<td>Revert to the state when Zoetic was first installed.</td>
+</tr>
+<tr>
+<td>Tap to rate Zoetic</td>
+<td></td>
+</tr>
+<tr>
+<td>Tap to upgrade <b>(List users only)</b></td>
+<td>Tap to upgrade to the full version of Zoetic.</td>
+</tr>
+<tr>
+<td>Tap to go to Zoetic's YouTube channel</td>
+<td></td>
+</tr>
+<tr>
+<td>About Zoetic</td>
+<td>Acknowledgements and a link to other Cyfer apps.</td>
+</tr>
+</table>
+</div>
+
+<pre>
+
+</pre>
+
+<table style="width:100%;background-color: lightgrey;  background-position: center; table-layout: fixed;">
+<tr>
+<th><A href="javascript:window.history.back();" style=" color: blue">Back</a></th>
+<th><a href="../furtherdiscussion/furtherdiscussion.html" style=" color: blue">Further discussion</a></th>
+</tr>
+</table>
+</div>
+</div>
+    <script>
+      var navigation = responsiveNav("#nav", {customToggle: ".nav-toggle"});
+    </script>
+</body>
+</html>
