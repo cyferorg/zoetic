@@ -36,26 +36,19 @@
 </tr>
 <tr>
 <td>Use Relative Number of Intermediates <i>To be added in next Zoetic release</i></td>
-<td>Distribute the generated intermediate images, specified above, relative to the period between successive images. (All images must be dated and sorted.) The longer the period, the greater the number of intermediate images. For example, for a project using a value of 10 for 'number of intermediate images' and with three images: image1 (1 Jan 2000), image2 (2 Jan 2000), image3 (4 Jan 2000); the intermediate images would be distributed as image1 [7 intermediate images] image2 [14 intermediate images] image3. This is because there is one day between image1 and image2, and 2 days between image2 and image3.</td>
+<td>Distribute the generated intermediate images, specified above, relative to the periods between successive images.  The longer the period between successive images, the greater the number of intermediate images. This results in the passage of time in the video reflecting the dates of the images.  For example, for a project using a value of 20 for 'number of intermediate images' and with three images: image1 (1 Jan 2000), image2 (2 Jan 2000), image3 (4 Jan 2000); the intermediate images would be distributed as follows: image1 [1*20/3=7 intermediate images] image2 [2*20/3=13 intermediate images] image3. This is because there is one day between image1 and image2, and 2 days between image2 and image3. (All images must be dated and sorted for this function to work.)</td>
 </tr> 
 <tr>
 <td>Frames Per Second (FPS)</td>
 <td>Speed of the generated video. The greater the number the smoother the video. The length of the video will be: 'Num of images' x 'Num of intermediate images' / FPS.</td>
 </tr>
-
-
-
 <tr>
 <td>Pause at start</td>
-<td>Number of seconds to show the first image to act as an intro to the video. ></td>
+<td>Number of seconds to show the first image to act as an intro to the video.</td>
 </tr>
 <tr>
 <td>Pause at end</td>
-<td>Number of seconds to show the last image to act as an outro to the video. ></td>
-</tr>
-<tr>
-<td>Add start and end pause</td>
-<td>Show first and last images for one second to act as intro and outro to the video.></td>
+<td>Number of seconds to show the last image to act as an outro to the video.</td>
 </tr>
 <tr>
 <td>Maximum output image resolution</td>
@@ -72,16 +65,16 @@
 
 <tr>
 <td>Subtitle video</td>
-<td>Produce subtitles by displaying the image dates. The subtitles can be written either as an external .srt file or 'burnt' into the video. ></td>
+<td>Produce subtitles by displaying the image dates. The subtitles can be written either as an external .srt file or 'burnt' into the video.</td>
 </tr>
 <tr>
 <td>Only show year</td>
-<td>Subtitles will only display the date's year, not the full date. ></td>
+<td>Subtitles will only display the date's year, not the full date.</td>
 </tr>
 
 <tr>
-<td>Save videos to Photos/iCloud</td>
-<td>Videos will be saved to Photos/iCloud as well as saved locally.</td>
+<td>Save videos to iCloud</td>
+<td>Videos will be saved to a Zoetic album on iCloud as well as saved locally.</td>
 </tr>
 </table>
 
@@ -91,7 +84,7 @@
 
 <tr>
 <td>Maximum input image resolution</td>
-<td>Images with greater height or width will be sampled to the specified value. Allowing the use of large images may create out of memory problems.></td>
+<td>Images with greater height or width will be sampled to the specified value. Allowing the use of large images may create out of memory problems.</td>
 </tr>
 <tr>
 <td>Warn when image resolution is reduced</td>
