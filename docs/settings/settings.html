@@ -1,34 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8" />
-<head>
 <title>Zoetic Settings page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="icon" type="image/png" href="../zoeticicon.png"/>
     <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
     <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
     <script src="../responsive-nav.js"></script>
-  </head>
 
 <body>
 <script src="../nav.js"></script>
-<style>
-#settingstable tr:nth-child(even) {
-  background-color: #dddddd;
-}
-#settingstable table, #settingstable th, #settingstable td {
-  border: 1px solid black;
-}
-</style>
+
 <div id="settingstable">
 <h2>Settings</h2>
 
 <p>The settings and commands available on the Settings page.</p>
 
-
+<h3>Video creation</h3>
 <table style="width:100%">
 
-<h3>Video creation</h3>
 <tr>
 <td>Number of intermediate images</td>
 <td>Number of images to generate between each real image. The greater the number, the smoother the video.</td>
@@ -67,7 +57,7 @@ Prev image - copy the relevant area from the previous image<br>
 Zoom image - magnify the current image so that the crop is fully covered<br>
 Note that usually none of these options gives an ideal solution unless the areas to be covered are small therefore it is always best to try and set the crop so that it is covered by all the images.<br>
 <p>A video demonstrating the different approaches can be found on <A href="https://youtu.be/3gOZvn5zp_8" style=" color: blue">YouTube</a> or on <A href="https://www.bilibili.com/video/BV1hA411s72K" style=" color: blue">Bilibili</a>.</p>
- <b>(Pro only and Simple Mode off)</b></td>
+<b>(Pro only and Simple Mode off)</b></td>
 </tr>
 <tr>
 <td>Pause at start</td>
@@ -100,7 +90,7 @@ Equal - equal weighting. This will produce an effect where the transition might 
 </tr>
 <tr>
 <td>Only process images that completely cover the crop</td>
-<td>Only process images where the crop is fully covered by the image. If not set, some background may be visible in the video in which case you may wish to investigate the above "Fill exposed crop" setting. <b>(Pro only and Simple Mode off)</b>/td>
+<td>Only process images where the crop is fully covered by the image. If not set, some background may be visible in the video in which case you may wish to investigate the above "Fill exposed crop" setting. <b>(Pro only and Simple Mode off)</b></td>
 </tr>
 <tr>
 <td>Number of blank frames at start of video</td>
@@ -112,9 +102,9 @@ Equal - equal weighting. This will produce an effect where the transition might 
 </tr>
 </table>
 
+<h3>Images</h3>
 <table style="width:100%">
 
-<h3>Images</h3>
 <tr>
 <td>Order by date</td>
 <td>Use images' dates rather than the order the images were added to the project for sorting. The sort is implemented by tapping the sort buttons in the Sort screen.</td>
@@ -131,10 +121,10 @@ Equal - equal weighting. This will produce an effect where the transition might 
 <td>Warn when image resolution is reduced</td>
 <td>A warning will be displayed when images imported into a project have been reduced in size. The warning will only be displayed if the reduction took place due to the above user specified resolution limitation or, if using the non-Pro version of Zoetic, when the hard resolution limit is exceeded.</td>
 </tr>
-<tr>
 </table>
-<table style="width:100%">
 <h3>Marking</h3>
+<table style="width:100%">
+<tr>
 <td>Hide face/eye detect function</td>
 <td>All face/eye detection takes place on the user's device (i.e. images are not sent across any network) but to address any concern that Google (or any other organisation) may process images the function can be hidden and hence not accidentally activated.</td>
 </tr>
@@ -147,8 +137,9 @@ Equal - equal weighting. This will produce an effect where the transition might 
 <td>Assume all images are already aligned and hence don't need marking.</td>
 </tr>
 </table>
-<table style="width:100%">
 <h3>Camera</h3>
+<table style="width:100%">
+
 <tr>
 <td>Camera resolution</td>
 <td>The resolution to use when using Zoetic's camera function. <b>(Pro only)</b></td>
@@ -158,8 +149,9 @@ Equal - equal weighting. This will produce an effect where the transition might 
 <td>Copy photos taken by the camera to the DCIM/Camera folder. This allows for other apps to use the photos. <b>(Pro only)</b></td>
 </tr>
 </table>
-<table style="width:100%">
 <h3>Misc</h3>
+<table style="width:100%">
+
 <tr>
 <td>Simple Mode</td>
 <td>Hide the more advanced features of Zoetic Pro. Switching between on and off will reset some of the current project's settings. <b>(Pro only)</b></td>
@@ -205,8 +197,7 @@ Equal - equal weighting. This will produce an effect where the transition might 
 <th><a href="../furtherdiscussion/furtherdiscussion.html" style=" color: blue">Further discussion</a></th>
 </tr>
 </table>
-</div>
-</div>
+
     <script>
       var navigation = responsiveNav("#nav", {customToggle: ".nav-toggle"});
     </script>
