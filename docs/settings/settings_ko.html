@@ -7,6 +7,14 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
     <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
     <script src="../responsive-nav.js"></script>
+<style>
+#settingstable tr:nth-child(even) {
+  background-color: #dddddd;
+}
+#settingstable table, #settingstable th, #settingstable td {
+  border: 1px solid black;
+}
+</style>
 <body>
 <script src="../nav_ko.js"></script>
 
@@ -127,11 +135,11 @@ Equal - equal weighting. This will produce an effect where the transition might 
 <td>Warn when image resolution is reduced</td>
 <td>A warning will be displayed when images imported into a project have been reduced in size. The warning will only be displayed if the reduction took place due to the above user specified resolution limitation or, if using the non-Pro version of Zoetic, when the hard resolution limit is exceeded.</td>
 </tr>
-<tr>
+
 </table>
 <h3>Marking</h3>
 <table style="width:100%">
-
+<tr>
 <td>Hide face/eye detect function</td>
 <td>All face/eye detection takes place on the user's device (i.e. images are not sent across any network) but to address any concern that Google (or any other organisation) may process images the function can be hidden and hence not accidentally activated.</td>
 </tr>
