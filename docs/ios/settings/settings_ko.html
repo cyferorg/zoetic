@@ -1,27 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8" />
-<head>
 <title>Zoetic Settings page</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="icon" type="image/png" href="../zoeticicon.png"/>
     <!--[if lte IE 8]><link rel="stylesheet" href="../responsive-nav.css"><![endif]-->
     <!--[if gt IE 8]><!--><link rel="stylesheet" href="../styles.css"><!--<![endif]-->
     <script src="../responsive-nav.js"></script>
-  </head>
-
-<body>
-<script src="../nav_ko.js"></script>
-
-<h3>이 페이지는 아직 번역되지 않았습니다. 이 페이지의 Google 번역을 사용해보십시오.</h3>
-<div id="google_translate_element"></div>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-}
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-
 <style>
 #settingstable tr:nth-child(even) {
   background-color: #dddddd;
@@ -30,16 +15,27 @@ function googleTranslateElementInit() {
   border: 1px solid black;
 }
 </style>
+<body>
+<script src="../nav_ko.js"></script>
+
+<h3>이 페이지는 아직 번역되지 않았습니다. 이 페이지의 Google 번역을 사용해보십시오.</h3>
+<div id="google_translate_element"></div>
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ko', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 <div id="settingstable">
 <h2>Settings</h2>
 
 <p>The settings and commands available on the Settings page.</p>
 
 
-
-<table style="width:100%">
-
 <h3>Video creation</h3>
+<table style="width:100%">
 <tr>
 <td>Number of intermediate images</td>
 <td>Number of images to generate between each real image. The greater the number, the smoother the video.</td>
@@ -65,8 +61,8 @@ function googleTranslateElementInit() {
 <td>Output with greater height or width will be sampled to the specified value.</td>
 </tr>
 <tr>
-<td>Only use standard video resolutions/td>
-<td>The use of non-standard resolutions may result in problems with playback in some apps.</b></td>
+<td>Only use standard video resolutions</td>
+<td>The use of non-standard resolutions may result in problems with playback in some apps.</td>
 </tr>
 <tr>
 <td>Image background colour</td>
@@ -87,11 +83,8 @@ function googleTranslateElementInit() {
 <td>Videos will be saved to a Zoetic album on iCloud as well as saved locally.</td>
 </tr>
 </table>
-
-<table style="width:100%">
-
 <h3>Images</h3>
-
+<table style="width:100%">
 <tr>
 <td>Maximum input image resolution</td>
 <td>Images with greater height or width will be sampled to the specified value. Allowing the use of large images may create out of memory problems.</td>
@@ -105,13 +98,11 @@ function googleTranslateElementInit() {
 <td>Assume all images are already aligned and hence don't need marking.</td>
 </tr>
 </table>
-
-<table style="width:100%">
 <h3>Misc</h3>
-
+<table style="width:100%">
 <tr>
 <td>Hide help buttons</td>
-<td>Once you are familiar with Zoetic\'s interface, de-clutter the screens.</td>
+<td>Once you are familiar with Zoetic's interface, de-clutter the screens.</td>
 </tr>
 <tr>
 <td>Tap to set default values</td>
@@ -126,8 +117,8 @@ function googleTranslateElementInit() {
 <td></td>
 </tr>
 <tr>
-<td>Tap to upgrade <b>(List users only)</b></td>
-<td>Tap to upgrade to the full version of Zoetic.</td>
+<td>Tap to upgrade</td>
+<td>Tap to upgrade to the full version of Zoetic. <b>(Lite users only)</b></td>
 </tr>
 <tr>
 <td>Tap to go to Zoetic's YouTube channel</td>
@@ -138,7 +129,7 @@ function googleTranslateElementInit() {
 <td>Acknowledgements and a link to other Cyfer apps.</td>
 </tr>
 </table>
-</div>
+
 
 <pre>
 
@@ -150,7 +141,6 @@ function googleTranslateElementInit() {
 <th><a href="../furtherdiscussion/furtherdiscussion.html" style=" color: blue">세팅</a></th>
 </tr>
 </table>
-</div>
 </div>
     <script>
       var navigation = responsiveNav("#nav", {customToggle: ".nav-toggle"});
